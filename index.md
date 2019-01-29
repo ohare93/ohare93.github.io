@@ -14,7 +14,7 @@ layout: default
 <ul>
   {% for post in site.posts %}
     {% if post.menu != 'review' %}
-    <li>{{post.categories[0] | capitalize}} - 
+    <li>{{post.categories[0] }} - 
       <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%-d %B %Y" }} </a>
     </li>
     {% endif %}
@@ -23,11 +23,11 @@ layout: default
 
 ---
 
-<h1>Posts by Tag</h1>
+<h1>Posts by Category</h1>
 
 {% assign items = site.categories | sort %}
 {% for category in items %}
-  <h3>{{ category[0] | capitalize }}</h3>
+  <h3>{{ category[0] }}</h3>
   <ul>
     {% for post in category[1] %}
       {% if post.menu != 'review' %}
