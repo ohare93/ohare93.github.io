@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Anki Beginner Instructions"
+title:  "Anki Beginner Steps"
 date:   2019-01-29 12:00:00 -0000
 categories: [SRS]
 tags: [Anki, Tutorial]
-#permalink: anki-beginner
+permalink: anki-beginner-steps
 published: true
 ---
 
@@ -26,25 +26,38 @@ This guide assumes you already *want* to begin using a Spaced Repetition System 
    4. Extentions
    5. Phone syncing
    6. Missing Reviews
-   7. Optimum Recall? -->
+   7. Optimum Recall?
+   8. Switching Profiles / Multiple Users -->
 
 
 
 
 ## Download Anki
-Download [Anki], then make an account on [AnkiWeb].
+Download and install __[Anki]__, then make an account on __[AnkiWeb]__.
+
+When installed it should look like this:
 
 ![Image](/assets/anki-examples/main-page.png)
 
 
+
+
 ### Importing a Deck
 
-![Image](/assets/anki-examples/search-for-deck.png)
+Visit the [Anki Shared Decks][AnkiSharedDecks] page to see decks people have shared, which you can download and import.
 
-![Image](/assets/anki-examples/nato-deck-page.png)
+[![Image](/assets/anki-examples/search-for-deck.png){: style="border: 1px solid black;"}][AnkiSharedDecks]
+
+Find a deck you want to try. Let's take this deck on the [NATO Phonetic Alphabet][NatoDeck] as our example.
+
+![Image](/assets/anki-examples/nato-deck-page.png){: style="border: 1px solid black;"}
+
+Download the deck, and open the `.apkg` package. It should open Anki, saying it has imported. Like this:
+
+![Image](/assets/anki-examples/main-page-with-nato.png)
 
 ## Study 
-![Image](/assets/anki-examples/nato-study.png)
+![Image](/assets/anki-examples/nato-study.png){: style="border: 1px solid black;"}
 
 ![Image](/assets/anki-examples/nato-front.png)
 
@@ -66,7 +79,7 @@ Users input Notes into Anki, which then takes a Note and generates some Card(s).
 ## Stats
 
 ![Image](/assets/anki-examples/stats.png){:height="600em" width="200em" style="float: left;  padding-right:1em"}
-![Image](/assets/anki-examples/stats2.png)
+![Image](/assets/anki-examples/stats2.png){: style="border: 1px solid black;"}
 
 ## Further reading
 
@@ -105,3 +118,5 @@ Documentation covering all functionality Anki has to offer. Also see the [Anki G
 [AnkiManual]: https://apps.ankiweb.net/docs/manual.html
 [Anki]: https://apps.ankiweb.net/
 [AnkiWeb]: https://ankiweb.net/account/register
+[AnkiSharedDecks]: https://ankiweb.net/shared/decks/
+[NatoDeck]: https://ankiweb.net/shared/info/976506290
