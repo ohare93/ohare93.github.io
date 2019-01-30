@@ -8,24 +8,67 @@ tags: [Anki, Tutorial]
 published: true
 ---
 
+![Anki](/assets/anki.png){:height="300em" width="300em" style="float: left;  padding-right:1em"}
 
-- Make Accounts
-  - Anki
-  - AnkiWeb
-- Test deck, some basics
-  - Notes -> Cards
-  - Stats
-  - Importing a deck
-- Advanced
-  - Ease
-  - Card States
-  - Card Intervals
-  - Extentions
-  - Phone syncing
+This guide assumes you already *want* to begin using a Spaced Repetition System (SRS) to retain knowledge and assist in learning. `"But how do I begin?"` or `"What does this terminology mean?"` This guide will cover the basics of setting up Anki, as well as some common terminology and use cases.
 
+<!-- # Todo
+1. Make Accounts
+   1. AnkiWeb
+2. Test deck, some basics
+   1. Notes -> Cards
+   2. Stats
+   3. Importing a deck
+3. Advanced
+   1. Ease
+   2. Card States
+   3. Card Intervals
+   4. Extentions
+   5. Phone syncing
+   6. Missing Reviews
+   7. Optimum Recall? -->
+
+
+
+
+## Download Anki
+Download [Anki], then make an account on [AnkiWeb].
+
+![Image](/assets/anki-examples/main-page.png)
+
+
+### Importing a Deck
+
+![Image](/assets/anki-examples/search-for-deck.png)
+
+![Image](/assets/anki-examples/nato-deck-page.png)
+
+## Study 
+![Image](/assets/anki-examples/nato-study.png)
+
+![Image](/assets/anki-examples/nato-front.png)
+
+![Image](/assets/anki-examples/nato-back.png)
+
+
+### Browse Cards in a Deck
+
+If you can't see the sidebar, then in the  hit `Go -> Sidebar` to bring it up.
+
+>The sidebar on the left allows quick access to common search terms. Various search terms as described below are listed, along with all deck names and tag names. Clicking on an item will search for it.
+
+![Image](/assets/anki-examples/browse.png)
+
+### Notes vs Cards
+
+Users input Notes into Anki, which then takes a Note and generates some Card(s).
+
+## Stats
+
+![Image](/assets/anki-examples/stats.png){:height="600em" width="200em" style="float: left;  padding-right:1em"}
+![Image](/assets/anki-examples/stats2.png)
 
 ## Further reading
-
 
 
 ![Image](/assets/SuperMemo.png){:height="120em" width="120em" style="float: left;  padding-right:1em"}
@@ -47,11 +90,13 @@ A book about Language Learning using SRS, which contains many simple techniques 
 
 ---
 
-![Image](/assets/Anki.png){:height="120em" width="120em" style="float: left;  padding-right:1em"}
+![Image](/assets/anki.png){:height="120em" width="120em" style="float: left;  padding-right:1em"}
 #### [Anki User Manual][AnkiManual]
 Documentation covering all functionality Anki has to offer. Also see the [Anki Github Page](https://github.com/dae/anki) if interested, as it's all Open Source.
 
+---
 
+<iframe width="500em" height="300em" src="https://www.youtube.com/embed/QS2G-k2hQyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [SuperMemo]: https://www.supermemo.com/
 [SuperMemo20Rules]: https://www.supermemo.com/en/articles/20rules

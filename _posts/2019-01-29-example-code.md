@@ -34,3 +34,24 @@ hidden: true
 ### Links to other pages
 [Url link to the testing page]({% post_url 2019-01-30-anki-beginner-instructions %})
 
+
+
+## Tables
+| Test                       |                                Other |
+| :------------------------- | -----------------------------------: |
+| testinfjdsfgdsfndskjfdskfn | sdfjkdsfndsfssskdfkdsjfndsjkfnjkdsnf |
+| no                         |                         yesfsdfdsffs |
+
+>Use Alt+Shift+F to reformat the table
+
+
+
+## Youtube Videos
+
+<iframe width="400" height="300" src="https://www.youtube.com/embed/QS2G-k2hQyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+###### Set Manual Image, and have it link to video
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=QS2G-k2hQyg&yt%3Acc=on)
+
+
+
