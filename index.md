@@ -8,12 +8,12 @@ layout: default
 <div class="home">
 
 <!-- <img src="/assets/2019-01-11/6.jpg" />   -->
-<p>Test message 1234</p>
+<h2>Posts</h2>
 
 
 <ul>
   {% for post in site.posts %}
-    {% if post.menu != 'review' %}
+    {% if post.menu != 'review' and post.hidden != true %}
     <li>{{post.categories[0] }} - 
       <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%-d %B %Y" }} </a>
     </li>
@@ -21,9 +21,9 @@ layout: default
   {% endfor %}
 </ul>
 
----
 
-<h1>Posts by Category</h1>
+
+<!-- <h1>Posts by Category</h1>
 
 {% assign items = site.categories | sort %}
 {% for category in items %}
@@ -36,4 +36,23 @@ layout: default
     {% endfor %}
   </ul>
 {% endfor %}
+
+
+<h1>Posts by Tag</h1>
+
+{% assign items = site.tags | sort %}
+{% for tags in items %}
+  <h3>{{ tags[0] }}</h3>
+  <ul>
+    {% for post in tags[1] %}
+      {% if post.menu != 'review' %}
+        <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%-d %B %Y" }} </a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endfor %} -->
+
+
+{{ site.time }}
+
 </div>
