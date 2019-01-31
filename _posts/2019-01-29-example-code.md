@@ -54,4 +54,7 @@ hidden: true
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=QS2G-k2hQyg&yt%3Acc=on)
 
 
+## Heading References
 
+[Youtube Videos](#youtube-videos)
+Reference needs to be lower case, with spaces changes to -s
