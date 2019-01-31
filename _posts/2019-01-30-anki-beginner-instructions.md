@@ -25,16 +25,14 @@ This guide assumes you already *want* to begin using a Spaced Repetition System 
    3. Card Intervals
    4. extensions
    5. Phone syncing
-   6. Missing Reviews
-   7. Optimum Recall?
-   8. Switching Profiles / Multiple Users 
-   9. Deck Order
-   10. Burying/Suspending
+   6. Switching Profiles / Multiple Users 
+   7. Deck Order
+   8.  Burying/Suspending
 
  - Things not covered:
    1. Custom Study
    2. Deck Browsing Specifics
-      1. Decks vs Subdecks
+      1. Decks vs Sub-decks
       2. Tags
       3. Custom search terms
    3. Card Creation help
@@ -46,6 +44,9 @@ This guide assumes you already *want* to begin using a Spaced Repetition System 
    4. General Tips
       1. Cleaning up Media
       2. Clearing Empty Cards
+   5. Mindset
+      1. Optimum Recall
+      2. Missing Reviews
 -->
 
 
@@ -67,7 +68,7 @@ Visit the [Anki Shared Decks][AnkiSharedDecks] page to see decks people have cre
 
 [![Image](/assets/anki-examples/search-for-deck.png){: style="border: 1px solid black;"}][AnkiSharedDecks]
 
-You can download and import these decks into your Anki, then change the decks however you want. If the author makes a change to the original deck yours will not change, but you can usually redownload the updated version and apply the changes without impacting your study progress.
+You can download and import these decks into your Anki, then change the decks however you want. If the author makes a change to the original deck yours will not change, but you can usually re-download the updated version and apply the changes without impacting your study progress.
 
 Let's take this deck on the [NATO Phonetic Alphabet][NatoDeck] as our example.
 
@@ -96,7 +97,7 @@ Hit `Show Answer` to view the back of the card, with the answer. **Remember** yo
 
 You are given three choices *when learning new cards*: `Again`, `Good`, and `Easy`. The time above these options states how long it will be until you see this card again. For new cards this is called the "Learning Step". Selecting `Good` will push the review 10mins away, `Easy` 4days, and `Again` 1min. 
 
-If you know the and you found the question easy, then select `Easy`, and Anki will make sure to schedule this card further in the future from now on. If you were just correct select `Good`, and if you were wrong selcet `Again`. These options help Anki better tune specific cards to ask for review at the optimum time for learning.
+If you know the and you found the question easy, then select `Easy`, and Anki will make sure to schedule this card further in the future from now on. If you were just correct select `Good`, and if you were wrong select `Again`. These options help Anki better tune specific cards to ask for review at the optimum time for learning.
 
 Cards are also shown in a random order by default, so you do not simply recall the order.
 
@@ -130,7 +131,7 @@ If you can't see the sidebar, then in the  hit `Go -> Sidebar` to bring it up.
 
 ![Image](/assets/anki-examples/browse.png)
 
-You can browse cards by specific decks, subdecks, tags, or even save search terms.
+You can browse cards by specific decks, sub-decks, tags, or even save search terms.
 
 ### Due Dates
 
@@ -164,13 +165,13 @@ You can add any new Fields to the Note in the `Fields` button, as well as the te
 
 ![Image](/assets/anki-examples/stats.png){:height="600em" width="200em" style="float: right;  padding-right:1em"}
 
-Stats can be found by clicking `Stats` in the main window of Anki. These stats report on how many reivews you have in the future, how many cards you have studied, how long you spent reviewing them, how often you answered each option, how much of the deck is know, and more!
+Stats can be found by clicking `Stats` in the main window of Anki. These stats report on how many reviews you have in the future, how many cards you have studied, how long you spent reviewing them, how often you answered each option, how much of the deck is know, and more!
 
 
 
 ### Card Types
 
-As shown in the stat above, cards have different states: 
+As shown in the stats above, cards have different states: 
 
 - `Unseen`: never seen
 - `Learning`: currently learning
@@ -192,18 +193,18 @@ Make an account on __[AnkiWeb]__, then verify your email. After that click `Sync
 
 Download the Anki app on your preferred mobile OS ([Android][AnkiMobileAndroid] or [iOS][AnkiMobileIOS]). Sign in with your AnkiWeb account, and sync. You'll have to select "Download from AnkiWeb" if you already have synced before on desktop. Whenever you review cards on mobile, try and remember to sync before you close the app, so you do not lose your progress on desktop.
 
-**Note:** Yes the iOS app is about £24, whereas the Android app is free. This is because the iOS app is made by the Anki developer, and is the only way he funds the development of Anki. Whereas the Android app is open source on [Github][AnkiDriodGithub] made by a third party. This means that it may not have all the of Anki iOS and Desktop, or may lag behind at times. You can find the manual for the Android version [here][AnkiDriodManual].
+**Note:** Yes the iOS app is about £24, whereas the Android app is free. This is because the iOS app is made by the Anki developer, and is the only way he funds the development of Anki. Whereas the Android app is open source on [Github][AnkiDroidGithub] made by a third party. This means that it may not have all the of Anki iOS and Desktop, or may lag behind at times. You can find the manual for the Android version [here][AnkiDroidManual].
 
 
 
 ---
 
-## Advanced Functionality Roundup
+## Advanced Functionality Round-up
 
 Here I'll quickly touch on some more advanced functionality of Anki.
 
 ### Card Intervals
-As entioned in [#Study](#study) the period of a card is changed to be closer or further away when you select `Easy` or `Hard` (also for `Again` for learned cards). This is because these options change the card's *Ease Factor* which starts at 250%. When you mark a card as correct, it's new interval is calculated by the formula: `Current Interval x Ease Factor x Deck Interval Modifier`. Which is usually something like: `2d x 250% x 100%` = 5d.
+As mentioned in [#Study](#study) the period of a card is changed to be closer or further away when you select `Easy` or `Hard` (also for `Again` for learned cards). This is because these options change the card's *Ease Factor* which starts at 250%. When you mark a card as correct, it's new interval is calculated by the formula: `Current Interval x Ease Factor x Deck Interval Modifier`. Which is usually something like: `2d x 250% x 100%` = 5d.
 
 *Current Interval* is the current period of the card, how long since your last review of it. 
 
@@ -213,11 +214,11 @@ As entioned in [#Study](#study) the period of a card is changed to be closer or 
 
 ### [Burying][AnkiManualSiblings]
 
-[*Burying*] is done by Anki automatically, in an effort to not show *Siblings* (Cards which are generated from the same Note). This is because they will most likely share some information, and therefore impact of the later shown cards may be hurt by reviewing the first. *Burying* a card means to put it back ontop of the deck for tomorrow, essentially delaying the review.
+[*Burying*] is done by Anki automatically, in an effort to not show *Siblings* (Cards which are generated from the same Note). This is because they will most likely share some information, and therefore impact of the later shown cards may be hurt by reviewing the first. *Burying* a card means to put it back on-top of the deck for tomorrow, essentially delaying the review.
 
 ### [Suspending and Leeches][AnkiManualLeeches]
 
-Anki tracks how many times each card has *lapsed* (where it was learned, and then was forgotten). If the number of lapses gets above a threshold (default: 8 times) then Anki marks this card as a Leech. The default behaviour is to automatically tag the card with `Leech` and then *Suspend* the card, which means the card will never show up in a review again, until you unsuspend it. 
+Anki tracks how many times each card has *lapsed* (where it was learned, and then was forgotten). If the number of lapses gets above a threshold (default: 8 times) then Anki marks this card as a Leech. The default behaviour is to automatically tag the card with `Leech` and then *Suspend* the card, which means the card will never show up in a review again, until you un-suspend it. 
 
 You can also manually Suspend a card (or an entire note) through the options menu.
 
@@ -233,19 +234,28 @@ To install an extension go into the Extension's page and find the download code.
 
 Copy this code, then in the Anki main window click `Tools -> Add-ons -> Get Add-ons` type the code in the box, and hit `OK`. The Extension will install, and require a reboot of Anki to function.
 
-### Missing Reviews
-### Optimum Recall?
+Here are some extensions I can recommend:
+1. [Night Mode](https://ankiweb.net/shared/info/1496166067)
+2. [True Retention](https://ankiweb.net/shared/info/613684242)
+3. [Image Resizer](https://ankiweb.net/shared/info/1214357311)
+4. [Image Occlusion Enhanced](https://ankiweb.net/shared/info/1374772155)
+
+
 ### [Profiles for Multiple Users][AnkiManualProfiles]
 
 `File -> Switch Profile`
 
->Profiles are intended to be used by different people, and each AnkiWeb account can only keep one profile in sync. For dividing up your own content, you should use separate decks rather than separate profiles, except when using extra profiles for experimenting with changes you don’t plan to sync to other devices.
+>Profiles are intended to be used by different people, and each AnkiWeb account can only keep one profile in sync. For dividing up your own content, you should use separate decks rather than separate profiles, except when using extra profiles for experimenting with changes you don't plan to sync to other devices.
 
 Very useful for multiple people using the same computer, as you'll each have your own account to sign into, and sync progress to.
 
 
 
 
+
+---
+---
+---
 
 ## Further reading
 
@@ -259,7 +269,7 @@ An article which details 20 rules on how to organise your knowledge. Written by 
 
 ![Image](/assets/RememberByNickCase.png){:height="120em" width="120em" style="float: left;  padding-right:1em"}
 #### [How to Remember Anything Forever-ish][NCaseRemember] by Nicky Case
-An interactive web-comic which explains Spaced Repetition Systems, and their background.
+An interactive web-comic which explains Spaced Repetition Systems, and their background. Very useful for explaining to someone who has never heard of it.
 
 ---
 
@@ -295,5 +305,5 @@ Documentation covering all functionality Anki has to offer. Also see the [Anki G
 
 [AnkiMobileAndroid]: https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=en_GB
 [AnkiMobileIOS]: https://itunes.apple.com/gb/app/ankimobile-flashcards/id373493387?mt=8
-[AnkiDriodGithub]: https://github.com/ankidroid
+[AnkiDroidGithub]: https://github.com/ankidroid
 [AnkiDroidManual]: https://docs.ankidroid.org/manual.html
