@@ -53,6 +53,6 @@ layout: default
 {% endfor %} -->
 
 
-{{ site.time }}
+Last Updated at: {{ site.time }}
 
 </div>
