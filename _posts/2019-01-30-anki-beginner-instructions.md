@@ -214,7 +214,7 @@ As mentioned in [#Study](#study) the period of a card is changed to be closer or
 
 ### [Burying][AnkiManualSiblings]
 
-[*Burying*] is done by Anki automatically, in an effort to not show *Siblings* (Cards which are generated from the same Note). This is because they will most likely share some information, and therefore impact of the later shown cards may be hurt by reviewing the first. *Burying* a card means to put it back on-top of the deck for tomorrow, essentially delaying the review.
+*Burying* is done by Anki automatically, in an effort to not show *Siblings* (Cards which are generated from the same Note). This is because they will most likely share some information, and therefore impact of the later shown cards may be hurt by reviewing the first. *Burying* a card means to put it back on-top of the deck for tomorrow, essentially delaying the review.
 
 ### [Suspending and Leeches][AnkiManualLeeches]
 
