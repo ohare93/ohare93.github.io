@@ -32,6 +32,8 @@ plugins:
 
 timezone: Europe/London
 
+# Google Analytics
+google_analytics: UA-134050680-1
 
 # defaults:
 #   - scope:

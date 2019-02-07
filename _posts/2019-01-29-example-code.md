@@ -6,6 +6,8 @@ categories: [test]
 tags:
 published: true
 hidden: true
+author: "Bart Simpson"
+meta: "Springfield"
 ---
 
 
