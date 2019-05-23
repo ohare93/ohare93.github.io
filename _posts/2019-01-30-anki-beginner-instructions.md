@@ -6,7 +6,7 @@ categories: [SRS]
 tags: [Anki, Tutorial]
 permalink: anki-beginner-steps
 published: true
-comments: true
+github_comments_issueid: 1
 ---
 
 ![Anki](/assets/anki.png){:height="300em" width="300em" style="float: left;  padding-right:1em"}
@@ -286,7 +286,7 @@ Documentation covering all functionality Anki has to offer. Also see the [Anki G
 
 ---
 
-<iframe width="500em" height="300em" src="https://www.youtube.com/embed/QS2G-k2hQyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="500em" height="300em" src="https://www.youtube.com/embed/QS2G-k2hQyg" ></iframe> -->
 
 [SuperMemo]: https://www.supermemo.com/
 [SuperMemo20Rules]: https://www.supermemo.com/en/articles/20rules

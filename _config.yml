@@ -19,6 +19,7 @@ email: ohare93@gmail.com
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "ohare.blog" # the base hostname & protocol for your site, e.g. http://example.com
+github_comments_repository: "ohare93/ohare93.github.io"
 
 #Social Links
 minima:
