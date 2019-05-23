@@ -6,6 +6,7 @@ categories: [SRS]
 tags: [Anki, Tutorial]
 permalink: anki-beginner-steps
 published: true
+comments: true
 ---
 
 ![Anki](/assets/anki.png){:height="300em" width="300em" style="float: left;  padding-right:1em"}
