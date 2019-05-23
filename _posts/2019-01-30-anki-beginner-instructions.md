@@ -6,6 +6,7 @@ categories: [SRS]
 tags: [Anki, Tutorial]
 permalink: anki-beginner-steps
 published: true
+hidden: false
 github_comments_issueid: 1
 ---
 
