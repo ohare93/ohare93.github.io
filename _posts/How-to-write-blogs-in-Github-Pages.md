@@ -7,6 +7,7 @@
    - Couldn't share drives
    - Need Hyper-V enabled
    - Can't change an image (Full reload to get rid of cache)
+   - Firewall blocking sharing drives for Jekyll build
  - Tips and tricks
    - Images
    - CSS overrides

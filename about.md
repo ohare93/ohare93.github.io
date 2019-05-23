@@ -5,5 +5,5 @@ permalink: /about/
 ---
 
 
-![Me](/assets/GetOnMyLevel.jpg)
+<!-- ![Me](/assets/GetOnMyLevel.jpg) -->
 

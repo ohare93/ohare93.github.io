@@ -5,17 +5,20 @@
 layout: default
 ---
 
+This blog is dedicated to anything and everything I find interesting, such as learning, programming, Denmark, board games, and self improvement.
+
 <div class="home">
 
-<!-- <img src="/assets/2019-01-11/6.jpg" />   -->
+
 <h2>Posts</h2>
 
 
 <ul>
   {% for post in site.posts %}
     {% if post.menu != 'review' and post.hidden != true %}
-    <li>{{post.categories[0] }} - 
-      <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%-d %B %Y" }} </a>
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
+       <br>
+       <h5>{{ post.date | date: "%-d %B %Y" }} - {{post.categories[0]}}</h5>
     </li>
     {% endif %}
   {% endfor %}
@@ -30,14 +33,14 @@ layout: default
   <h3>{{ category[0] }}</h3>
   <ul>
     {% for post in category[1] %}
-      {% if post.menu != 'review' %}
+      {% if post.menu != 'review' and post.hidden != true %}
         <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%-d %B %Y" }} </a></li>
       {% endif %}
     {% endfor %}
   </ul>
-{% endfor %}
+{% endfor %} -->
 
-
+<!-- 
 <h1>Posts by Tag</h1>
 
 {% assign items = site.tags | sort %}
@@ -52,7 +55,7 @@ layout: default
   </ul>
 {% endfor %} -->
 
-
+<h6>
 Last Updated at: {{ site.time }}
-
+</h6>
 </div>

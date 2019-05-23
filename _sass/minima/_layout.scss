@@ -140,7 +140,7 @@
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
   color: $grey-color;
-  margin-left: -$spacing-unit / 2;
+  margin-left: -$spacing-unit / 3;
   @extend %clearfix;
 }
 
@@ -295,4 +295,9 @@
 .one-half {
   width: -webkit-calc(50% - (#{$spacing-unit} / 2));
   width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+.one-third {
+  width: -webkit-calc(33% - (#{$spacing-unit} / 3));
+  width:         calc(33% - (#{$spacing-unit} / 3));
 }
