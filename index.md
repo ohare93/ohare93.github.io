@@ -5,7 +5,8 @@
 layout: default
 ---
 
-This blog is dedicated to anything and everything I find interesting, such as learning, programming, Denmark, board games, and self improvement.
+This blog is dedicated to anything and everything I find interesting, such as Learning :books:, Programming :keyboard:, Denmark :denmark:, Board Games :game_die:, and Self Improvement :+1:
+
 
 <div class="home">
 
@@ -24,6 +25,21 @@ This blog is dedicated to anything and everything I find interesting, such as le
   {% endfor %}
 </ul>
 
+
+{% if jekyll.environment != 'production' %}
+<h2>Dev Only Posts</h2>
+<ul>
+  {% for post in site.posts %}
+    {% if post.hidden == true %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
+       <br>
+       <h5>{{ post.date | date: "%-d %B %Y" }} - {{post.categories[0]}}</h5>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{% endif %}
 
 
 <!-- <h1>Posts by Category</h1>

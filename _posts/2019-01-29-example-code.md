@@ -60,3 +60,8 @@ meta: "Springfield"
 
 [Youtube Videos](#youtube-videos)
 Reference needs to be lower case, with spaces changes to -s
+
+
+
+### Emojis
+:smile: :worried: :+1:

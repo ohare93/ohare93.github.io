@@ -32,7 +32,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-#  - jemoji
+  - jemoji
 
 
 timezone: Europe/London
