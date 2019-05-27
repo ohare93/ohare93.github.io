@@ -1,0 +1,102 @@
+
+<html>
+	<head>
+	<meta charset="utf-8">
+	</head>
+	<body>
+
+		<!-- <p>What Danish word would you like to multisearch? Type below, then press enter please.</p> -->
+		<!-- <input type='text' id='boxu' autofocus/> -->
+		<!-- <button onclick="searchy(event);">Search</button> -->
+		<p>Enter multiple words on separate lines, then select which sites to open</p>
+		<textarea type='text' id='multibox1' rows='10'></textarea>
+		<div>
+			<button onclick="searchmulti(0);">Open All Ticked --></button>			
+		</div>
+		<div id="SiteButtons"></div>
+
+		<script>
+			var SitesEnum = Object.freeze({
+				"Forvo":{
+					"id": 1,
+					"pre":"http://www.forvo.com/word/",
+					"post":"/#da"
+				},
+				"Image":{
+					"id": 2,
+					"pre":"https://www.google.dk/search?tbm=isch&q=",
+					"post":""
+				},
+				"GTrans":{
+					"id": 3,
+					"pre":"https://translate.google.com/#view=home&op=translate&sl=da&tl=en&text=",
+					"post":""
+				},
+				"Babla":{
+					"id": 4,
+					"pre":"https://en.bab.la/conjugation/danish/",
+					"post":""
+				},
+				"Ordnet":{
+					"id": 5,
+					"pre":"https://ordnet.dk/ddo/ordbog?query=",
+					"post":""
+				},
+				"Verbix":{
+					"id": 6, 
+					"pre":"http://www.verbix.com/webverbix/go.php?T1=", 
+					"post":"&Submit=Go&D1=26&H1=126"
+				}
+			});
+			Object.freeze(SitesEnum);
+			
+			var ButtonHit;
+			var SiteCheckboxes = [];
+			
+			//Setup the buttons and checkboxes programmatically
+			document.addEventListener("DOMContentLoaded", function(event) { 
+			  var buttonsWanted = 10;
+			  var doc = document;
+			  var docFrag = document.createDocumentFragment();
+
+			  for(var key in SitesEnum){
+				var button = doc.createElement('button');
+				button.innerHTML = key;
+				button.setAttribute('onclick', ('searchmulti(' + SitesEnum[key].id + ');'));
+				docFrag.appendChild(button);
+				
+				var checkbox = doc.createElement('input');
+				checkbox.setAttribute('type', 'checkbox');
+				checkbox.setAttribute('id', key + 'checkbox');
+				docFrag.appendChild(checkbox);
+			  }
+
+			  doc.getElementById('SiteButtons').appendChild(docFrag);
+			});
+			
+			function searchmulti(e){
+				ButtonHit = e;
+			
+				var words = document.getElementById('multibox1').value;
+				words = words.split("\n"); //Get each individual word
+								
+				for(var key in SitesEnum){ //Check the checkboxes
+					SiteCheckboxes[SitesEnum[key].id] = document.getElementById(key + 'checkbox').checked;
+				}
+				
+				//Open sites
+				for (var i=words.length-1; i>=0; i--){ 
+					for(var key in SitesEnum){						
+						if(ShouldOpenSite(SitesEnum[key].id)){
+							window.open(SitesEnum[key].pre + words[i] + SitesEnum[key].post);
+						}
+					}
+				}
+			}
+			
+			function ShouldOpenSite(siteNum){
+				return (ButtonHit == siteNum || (ButtonHit == 0 && SiteCheckboxes[siteNum]));
+			}
+		</script>
+	</body>
+</html>
