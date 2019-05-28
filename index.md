@@ -16,11 +16,11 @@ This blog is dedicated to anything and everything I find interesting, such as Le
 
 <ul>
   {% for post in site.posts %}
-    {% if post.menu != 'review' and post.hidden != true %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a>
-       <br>
-       <h5>{{ post.date | date: "%-d %B %Y" }} - {{post.categories[0]}}</h5>
-    </li>
+    {% if post.hidden != true and post.categories[0] != "Tool" %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a>
+        <br>
+        <h5>{{ post.date | date: "%-d %B %Y" }} - {{post.categories[0]}}</h5>
+      </li>
     {% endif %}
   {% endfor %}
 </ul>
@@ -41,6 +41,19 @@ This blog is dedicated to anything and everything I find interesting, such as Le
 
 {% endif %}
 
+
+<h3>Tools</h3>
+<ul>
+  {% for post in site.posts %}
+    {% if post.hidden != true %}
+      {% for category in post.categories %}
+        {% if category == 'Tool' %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</ul>
 
 <!-- <h1>Posts by Category</h1>
 

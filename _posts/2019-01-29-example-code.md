@@ -8,6 +8,7 @@ published: true
 hidden: true
 author: "Bart Simpson"
 meta: "Springfield"
+permalink: test
 ---
 
 
