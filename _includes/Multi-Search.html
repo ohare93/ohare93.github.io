@@ -8,10 +8,14 @@
 		<!-- <p>What Danish word would you like to multisearch? Type below, then press enter please.</p> -->
 		<!-- <input type='text' id='boxu' autofocus/> -->
 		<!-- <button onclick="searchy(event);">Search</button> -->
-		<p>Enter multiple words on separate lines, then select which sites to open</p>
+		<!-- <p>Enter multiple words on separate lines, then select which sites to open</p> -->
 		<textarea type='text' id='multibox1' rows='10'></textarea>
 		<div>
-			<button onclick="searchmulti(0);">Open All Ticked --></button>			
+			<button onclick="RemoveWhiteSpace();">Remove Whitespace</button>
+			<button onclick="Sort(1)">A->Z</button>
+			<button onclick="Sort(-1)">Z->A</button>
+		</div><div>	
+				<button onclick="searchmulti(0);">Open All Ticked --></button>
 		</div>
 		<div id="SiteButtons"></div>
 
@@ -22,7 +26,7 @@
 					"pre":"http://www.forvo.com/word/",
 					"post":"/#da"
 				},
-				"Image":{
+				"GImage":{
 					"id": 2,
 					"pre":"https://www.google.dk/search?tbm=isch&q=",
 					"post":""
@@ -96,6 +100,19 @@
 			
 			function ShouldOpenSite(siteNum){
 				return (ButtonHit == siteNum || (ButtonHit == 0 && SiteCheckboxes[siteNum]));
+			}
+
+			function RemoveWhiteSpace(){
+				var entryBox = document.getElementById('multibox1');
+				entryBox.value = entryBox.value.replace(/\n{2,}/g, "\n").trim();
+			}
+
+			function Sort(direction){
+				var entryBox = document.getElementById('multibox1');
+				entryBox.value = direction == 1 ?
+					entryBox.value.split("\n").sort().join("\n")
+					:
+					entryBox.value.split("\n").sort().reverse().join("\n");
 			}
 		</script>
 	</body>
