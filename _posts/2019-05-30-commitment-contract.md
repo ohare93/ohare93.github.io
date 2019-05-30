@@ -7,7 +7,7 @@ tags: []
 permalink: commitment-contracts
 published: true
 hidden: false
-github_comments_issueid: 2
+github_comments_issueid: 4
 ---
 
 I have created these Commitment Contracts on [Beeminder][Beeminder] :bee: for things I do not do often enough, but want to do more in my life.
