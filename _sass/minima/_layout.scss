@@ -151,6 +151,13 @@
   padding-left: $spacing-unit / 2;
 }
 
+.footer-col-third {
+  width: -webkit-calc(100% - (#{$spacing-unit} / 3));
+  width:         calc(100% - (#{$spacing-unit} / 3));
+  margin-bottom: $spacing-unit / 3;
+  padding-left: $spacing-unit / 3;
+}
+
 .footer-col-1,
 .footer-col-2 {
   width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -298,6 +305,52 @@
 }
 
 .one-third {
+  width: -webkit-calc(33% - (#{$spacing-unit} / 3));
+  width:         calc(33% - (#{$spacing-unit} / 3));
+}
+
+
+
+.test-wrapper {
+  @include relative-font-size(0.9375);
+  color: $grey-color;
+  margin-left: -$spacing-unit / 3;
+  @extend %clearfix;
+}
+
+.test {
+  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+  width:         calc(100% - (#{$spacing-unit} / 2));
+  margin-bottom: $spacing-unit / 2;
+  //padding-left: $spacing-unit / 2;
+  text-align: center;
+}
+
+.test-third {
+  width: -webkit-calc(100% - (#{$spacing-unit} / 3));
+  width:         calc(100% - (#{$spacing-unit} / 3));
+  margin-bottom: $spacing-unit / 3;
+  padding-left: $spacing-unit / 3;
+}
+
+.test-1,
+.test-2 {
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
+}
+
+.test-3 {
+  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+  width:         calc(100% - (#{$spacing-unit} / 2));
+}
+
+@media screen and (min-width: $on-medium) {
+  .test {
+    float: left;
+  }
+}
+
+.test-one-third {
   width: -webkit-calc(33% - (#{$spacing-unit} / 3));
   width:         calc(33% - (#{$spacing-unit} / 3));
 }

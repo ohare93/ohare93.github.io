@@ -14,6 +14,7 @@
 			<button onclick="RemoveWhiteSpace();">Remove Whitespace</button>
 			<button onclick="Sort(1)">A->Z</button>
 			<button onclick="Sort(-1)">Z->A</button>
+			<button onclick="Clear()">Clear</button>
 		</div><div>	
 				<button onclick="searchmulti(0);">Open All Ticked --></button>
 		</div>
@@ -113,6 +114,11 @@
 					entryBox.value.split("\n").sort().join("\n")
 					:
 					entryBox.value.split("\n").sort().reverse().join("\n");
+			}
+
+			function Clear(){
+				var entryBox = document.getElementById('multibox1');
+				entryBox.value = "";
 			}
 		</script>
 	</body>
