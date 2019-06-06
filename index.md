@@ -19,7 +19,19 @@ This blog is dedicated to anything and everything I find interesting, such as Le
     {% if post.hidden != true and post.categories[0] != "Tool" %}
       <li><a href="{{ post.url }}">{{ post.title }}</a>
         <br>
-        <h5>{{ post.date | date: "%-d %B %Y" }} - {{post.categories[0]}}</h5>
+        <h5>{{ post.date | date: "%-d %B %Y" }} - 
+        {% assign num = post.categories.size %}
+        {% if num > 1 %} {% for i in (0..(num-1)) %}
+            {{ post.categories[i] }},
+        {% endfor %} {% endif %}
+        {{ post.categories.last }}
+        -
+        {% assign num = post.tags.size %}
+        {% if num > 1 %} {% for i in (0..(num-1)) %}
+            {{ post.tags[i] }},
+        {% endfor %} {% endif %}
+        {{ post.tags.last }}
+        </h5>
       </li>
     {% endif %}
   {% endfor %}
@@ -33,7 +45,19 @@ This blog is dedicated to anything and everything I find interesting, such as Le
     {% if post.hidden == true %}
     <li><a href="{{ post.url }}">{{ post.title }}</a>
        <br>
-       <h5>{{ post.date | date: "%-d %B %Y" }} - {{post.categories[0]}}</h5>
+       <h5>{{ post.date | date: "%-d %B %Y" }} - 
+       {% assign num = post.categories.size %}
+        {% if num > 1 %} {% for i in (0..(num-1)) %}
+            {{ post.categories[i] }},
+        {% endfor %} {% endif %}
+        {{ post.categories.last }}
+        -
+        {% assign num = post.tags.size %}
+        {% if num > 1 %} {% for i in (0..(num-1)) %}
+            {{ post.tags[i] }},
+        {% endfor %} {% endif %}
+        {{ post.tags.last }}
+        </h5>
     </li>
     {% endif %}
   {% endfor %}

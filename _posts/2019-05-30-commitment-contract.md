@@ -3,7 +3,7 @@ layout: post
 title:  "Commitment Contracts"
 date:   2019-05-22 12:00:00 -0000
 categories: [Productivity]
-tags: []
+tags: [Personal Progress]
 permalink: commitment-contracts
 published: true
 hidden: false

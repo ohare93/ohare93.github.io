@@ -14,6 +14,7 @@ permalink: test
 
 
 ### Image Test
+
 {% highlight html%}{% raw %}
 ![Test](/assets/GetOnMyLevel.jpg)
 {% endraw %}{% endhighlight %}
@@ -24,6 +25,7 @@ permalink: test
 
 
 ### References
+
 - [SuperMemo 20 Rules][SuperMemo20Rules] by Dr Piotr Wozniak
 - [How to Remember Anything Forever-ish][NCaseRemember] by Nicky Case
 - [Fluent Forever: How to Learn Any Language Fast and Never Forget It][FluentForever] by Gabriel Wyner
@@ -35,11 +37,13 @@ permalink: test
 
 
 ### Links to other pages
+
 [Url link to the testing page]({% post_url 2019-01-30-anki-beginner-instructions %})
 
 
 
 ## Tables
+
 | Test                       |                                Other |
 | :------------------------- | -----------------------------------: |
 | testinfjdsfgdsfndskjfdskfn | sdfjkdsfndsfssskdfkdsjfndsjkfnjkdsnf |
@@ -59,10 +63,26 @@ permalink: test
 
 ## Heading References
 
-[Youtube Videos](#youtube-videos)
+[Image Test](#image-test)
 Reference needs to be lower case, with spaces changes to -s
 
 
 
 ### Emojis
 :smile: :worried: :+1:
+
+
+### Liquid tips and tricks
+
+[Liquid Help Page][Liquid]
+
+[Liquid]: https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+
+#### List all tags with commas
+{% highlight liquid%}{% raw %}
+    {% assign tagNum = post.tags.size %}
+    {% if tagNum > 1 %} {% for i in (0..(tagNum-1)) %}
+        {{ post.tags[i] }},
+    {% endfor %} {% endif %}
+    {{ post.tags.last }}
+{% endraw %}{% endhighlight %}
