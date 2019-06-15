@@ -9,14 +9,22 @@
 		<!-- <input type='text' id='boxu' autofocus/> -->
 		<!-- <button onclick="searchy(event);">Search</button> -->
 		<!-- <p>Enter multiple words on separate lines, then select which sites to open</p> -->
-		<textarea type='text' id='multibox1' rows='10'></textarea>
+		<textarea type='text' id='multibox1' rows='10' onkeyup="TextBoxChanged()"></textarea>
+		<span id="NumberOfLines">0</span><span> valid line(s)</span>
 		<div>
-			<button onclick="RemoveWhiteSpace();">Remove Whitespace</button>
-			<button onclick="Sort(1)">A->Z</button>
-			<button onclick="Sort(-1)">Z->A</button>
-			<button onclick="Clear()">Clear</button>
+			<button title="Remove all the whitespace from the text entry box"
+				onclick="RemoveWhiteSpace();">Remove Whitespace</button>
+			<button title="Sort the entries alphabetically"
+				onclick="Sort(1)">A->Z</button>
+			<button title="Sort the entries reverse alphabetically"
+				onclick="Sort(-1)">Z->A</button>
+			<button title="Clear the textbox"
+				onclick="Clear()">Clear</button>
 		</div><div>	
-				<button onclick="searchmulti(0);">Open All Ticked --></button>
+				<button title="Opens a new webpage for each ticked page below, for each entry in the box above"
+					onclick="searchmulti(0);">Open All Ticked ▼</button>
+				<span title="Group the opened webpages by sites below, rather than grouping by the word above">
+					<input type="checkbox" id="groupbysitecheckbox"/>Group by site?</span>
 		</div>
 		<div id="SiteButtons"></div>
 
@@ -25,38 +33,46 @@
 				"Forvo":{
 					"id": 1,
 					"pre":"http://www.forvo.com/word/",
-					"post":"/#da"
+					"post":"/#da",
+					"description": "Forvo.com, for pronunciation audio files"
 				},
 				"GImage":{
 					"id": 2,
 					"pre":"https://www.google.dk/search?tbm=isch&q=",
-					"post":""
+					"post":"",
+					"description": "Google Image, in Danish"
 				},
 				"GTrans":{
 					"id": 3,
 					"pre":"https://translate.google.com/#view=home&op=translate&sl=da&tl=en&text=",
-					"post":""
+					"post":"",
+					"description": "Google Translate, Danish -> English"
 				},
 				"Babla":{
 					"id": 4,
 					"pre":"https://en.bab.la/conjugation/danish/",
-					"post":""
+					"post":"",
+					"description": "Bab.la, an online dictionary"
 				},
 				"Ordnet":{
 					"id": 5,
 					"pre":"https://ordnet.dk/ddo/ordbog?query=",
-					"post":""
+					"post":"",
+					"description": "Ordnet.dk, a Danish online dictionary"
 				},
 				"Verbix":{
 					"id": 6, 
 					"pre":"http://www.verbix.com/webverbix/go.php?T1=", 
-					"post":"&Submit=Go&D1=26&H1=126"
+					"post":"&Submit=Go&D1=26&H1=126",
+					"description": "Verbix.com, for verb conjugator"
 				}
 			});
 			Object.freeze(SitesEnum);
 			
 			var ButtonHit;
 			var SiteCheckboxes = [];
+			var SitesJustOpenedCount = 0;
+			var NumberOfValidLines = 0;
 			
 			//Setup the buttons and checkboxes programmatically
 			document.addEventListener("DOMContentLoaded", function(event) { 
@@ -68,6 +84,7 @@
 				var button = doc.createElement('button');
 				button.innerHTML = key;
 				button.setAttribute('onclick', ('searchmulti(' + SitesEnum[key].id + ');'));
+				button.setAttribute('title', (SitesEnum[key].description));
 				docFrag.appendChild(button);
 				
 				var checkbox = doc.createElement('input');
@@ -84,18 +101,49 @@
 			
 				var words = document.getElementById('multibox1').value;
 				words = words.split("\n"); //Get each individual word
+
+				var groupBySite = document.getElementById('groupbysitecheckbox').checked;
 								
 				for(var key in SitesEnum){ //Check the checkboxes
 					SiteCheckboxes[SitesEnum[key].id] = document.getElementById(key + 'checkbox').checked;
 				}
 				
 				//Open sites
-				for (var i=words.length-1; i>=0; i--){ 
+				if(groupBySite){
 					for(var key in SitesEnum){						
 						if(ShouldOpenSite(SitesEnum[key].id)){
-							window.open(SitesEnum[key].pre + words[i] + SitesEnum[key].post);
+							for (var i=words.length-1; i>=0; i--){
+								OpenSite(words[i], key);
+								//window.open(SitesEnum[key].pre + words[i] + SitesEnum[key].post);
+							}
 						}
 					}
+				}else{
+					for (var i=words.length-1; i>=0; i--){ 
+						for(var key in SitesEnum){						
+							if(ShouldOpenSite(SitesEnum[key].id)){
+								OpenSite(words[i], key);
+								//window.open(SitesEnum[key].pre + words[i] + SitesEnum[key].post);
+							}
+						}
+					}
+				}
+
+				if(SitesJustOpenedCount == 0){
+					if(ButtonHit == 0){
+						alert("No site checkboxes selected");
+					}else if(NumberOfValidLines == 0){
+						alert("Enter something in the text box");
+					}
+				}
+
+				SitesJustOpenedCount = 0;
+			}
+
+			function OpenSite(word, siteKey){
+				if(CheckIsWordValid(word)){
+					window.open(SitesEnum[siteKey].pre + word + SitesEnum[siteKey].post);
+					SitesJustOpenedCount++;
 				}
 			}
 			
@@ -103,9 +151,15 @@
 				return (ButtonHit == siteNum || (ButtonHit == 0 && SiteCheckboxes[siteNum]));
 			}
 
+			function CheckIsWordValid(word){
+				return (word != "");
+			}
+
 			function RemoveWhiteSpace(){
 				var entryBox = document.getElementById('multibox1');
 				entryBox.value = entryBox.value.replace(/\n{2,}/g, "\n").trim();
+
+				TextBoxChanged();
 			}
 
 			function Sort(direction){
@@ -114,11 +168,30 @@
 					entryBox.value.split("\n").sort().join("\n")
 					:
 					entryBox.value.split("\n").sort().reverse().join("\n");
+				
+					RemoveWhiteSpace();
 			}
 
 			function Clear(){
 				var entryBox = document.getElementById('multibox1');
 				entryBox.value = "";
+
+				TextBoxChanged();
+			}
+
+			function TextBoxChanged(){
+				var entryBox = document.getElementById('multibox1');
+				numberOfLinesTextbox = document.getElementById('NumberOfLines');
+				
+
+				var lines = entryBox.value.split("\n");
+				var count = 0;
+				for(var a = 0; a < lines.length; a++){
+					if(lines[a] != "")
+						count++;
+				}
+				numberOfLinesTextbox.textContent = count;			
+				NumberOfValidLines = count;	
 			}
 		</script>
 	</body>
