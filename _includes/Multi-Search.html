@@ -21,10 +21,28 @@
 			<button title="Clear the textbox"
 				onclick="Clear()">Clear</button>
 		</div><div>	
-				<button title="Opens a new webpage for each ticked page below, for each entry in the box above"
-					onclick="searchmulti(0);">Open All Ticked ▼</button>
-				<span title="Group the opened webpages by sites below, rather than grouping by the word above">
-					<input type="checkbox" id="groupbysitecheckbox"/>Group by site?</span>
+			<span title="How many valid lines do you want to open at once?">Open 
+				<select id="NumberOfLinesToOpenSelector">
+					<option value="0" selected>All</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="20">20</option>
+					<option value="30">30</option>
+					<option value="40">40</option>
+					<option value="50">50</option>
+				</select>
+				Line(s).
+			</span>
+			<span title="Delete all lines which were just opened?"><input type="checkbox" id="DeleteOpenedLinesCheckbox"/>Then delete?</span>
+		</div><div>	
+			<button title="Opens a new webpage for each ticked page below, for each entry in the box above"
+				onclick="searchmulti(0);">Open All Ticked Sites ▼</button>
+			<span title="Group the opened webpages by sites below, rather than grouping by the word above">
+				<input type="checkbox" id="groupbysitecheckbox"/>Group by site?</span>
 		</div>
 		<div id="SiteButtons"></div>
 
@@ -73,6 +91,7 @@
 			var SiteCheckboxes = [];
 			var SitesJustOpenedCount = 0;
 			var NumberOfValidLines = 0;
+			var NumberOfLinesToOpen = 0;
 			
 			//Setup the buttons and checkboxes programmatically
 			document.addEventListener("DOMContentLoaded", function(event) { 
@@ -98,14 +117,35 @@
 			
 			function searchmulti(e){
 				ButtonHit = e;
-			
-				var words = document.getElementById('multibox1').value;
+				
+				var entryBox = document.getElementById('multibox1');
+				var words = entryBox.value;
 				words = words.split("\n"); //Get each individual word
 
 				var groupBySite = document.getElementById('groupbysitecheckbox').checked;
-								
+				var deleteOpenedLines = document.getElementById('DeleteOpenedLinesCheckbox').checked;				
+				NumberOfLinesToOpen = document.getElementById('NumberOfLinesToOpenSelector').value;
+												
 				for(var key in SitesEnum){ //Check the checkboxes
 					SiteCheckboxes[SitesEnum[key].id] = document.getElementById(key + 'checkbox').checked;
+				}
+
+				
+				if(NumberOfLinesToOpen > 0 && (NumberOfLinesToOpen < words.length)){
+					var a = 0, b = 0;
+					for(a = 0; b < NumberOfLinesToOpen; a++){
+						if(CheckIsWordValid(words[a])){
+							b++;
+						}
+					}
+
+					if(deleteOpenedLines){
+						SetEntryBox(words.slice(a, words.length).join("\n"));
+					}
+					words = words.slice(0, a);
+					
+				}else if(deleteOpenedLines){
+					Clear();
 				}
 				
 				//Open sites
@@ -157,24 +197,29 @@
 
 			function RemoveWhiteSpace(){
 				var entryBox = document.getElementById('multibox1');
-				entryBox.value = entryBox.value.replace(/\n{2,}/g, "\n").trim();
+				SetEntryBox(entryBox.value.replace(/\n{2,}/g, "\n").trim());
 
 				TextBoxChanged();
 			}
 
 			function Sort(direction){
 				var entryBox = document.getElementById('multibox1');
-				entryBox.value = direction == 1 ?
+				SetEntryBox(direction == 1 ?
 					entryBox.value.split("\n").sort().join("\n")
 					:
-					entryBox.value.split("\n").sort().reverse().join("\n");
+					entryBox.value.split("\n").sort().reverse().join("\n")
+				);
 				
-					RemoveWhiteSpace();
+				RemoveWhiteSpace();
 			}
 
 			function Clear(){
+				SetEntryBox("");
+			}
+
+			function SetEntryBox(value){
 				var entryBox = document.getElementById('multibox1');
-				entryBox.value = "";
+				entryBox.value = value;
 
 				TextBoxChanged();
 			}
