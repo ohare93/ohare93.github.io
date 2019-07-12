@@ -20,6 +20,9 @@
 				onclick="Sort(-1)">Z->A</button>
 			<button title="Clear the textbox"
 				onclick="Clear()">Clear</button>
+			<button title="Remove duplicate entries"
+				onclick="RemoveDups()">Remove Dups</button>
+				
 		</div><div>	
 			<span title="How many valid lines do you want to open at once?">Open 
 				<select id="NumberOfLinesToOpenSelector">
@@ -38,6 +41,8 @@
 				Line(s).
 			</span>
 			<span title="Delete all lines which were just opened?"><input type="checkbox" id="DeleteOpenedLinesCheckbox"/>Then delete?</span>
+			<button  title="Oopsie!"
+				onclick="UndoDelete()">Undo Delete</button>
 		</div><div>	
 			<button title="Opens a new webpage for each ticked page below, for each entry in the box above"
 				onclick="searchmulti(0);">Open All Ticked Sites ▼</button>
@@ -92,6 +97,8 @@
 			var SitesJustOpenedCount = 0;
 			var NumberOfValidLines = 0;
 			var NumberOfLinesToOpen = 0;
+			var DeletedText = "";
+			var entryBox = document.getElementById('multibox1');
 			
 			//Setup the buttons and checkboxes programmatically
 			document.addEventListener("DOMContentLoaded", function(event) { 
@@ -118,7 +125,6 @@
 			function searchmulti(e){
 				ButtonHit = e;
 				
-				var entryBox = document.getElementById('multibox1');
 				var words = entryBox.value;
 				words = words.split("\n"); //Get each individual word
 
@@ -140,6 +146,7 @@
 					}
 
 					if(deleteOpenedLines){
+						DeletedText = words.slice(0, a).join("\n") + "\n";
 						SetEntryBox(words.slice(a, words.length).join("\n"));
 					}
 					words = words.slice(0, a);
@@ -154,7 +161,6 @@
 						if(ShouldOpenSite(SitesEnum[key].id)){
 							for (var i=words.length-1; i>=0; i--){
 								OpenSite(words[i], key);
-								//window.open(SitesEnum[key].pre + words[i] + SitesEnum[key].post);
 							}
 						}
 					}
@@ -163,7 +169,6 @@
 						for(var key in SitesEnum){						
 							if(ShouldOpenSite(SitesEnum[key].id)){
 								OpenSite(words[i], key);
-								//window.open(SitesEnum[key].pre + words[i] + SitesEnum[key].post);
 							}
 						}
 					}
@@ -196,14 +201,12 @@
 			}
 
 			function RemoveWhiteSpace(){
-				var entryBox = document.getElementById('multibox1');
 				SetEntryBox(entryBox.value.replace(/\n{2,}/g, "\n").trim());
 
 				TextBoxChanged();
 			}
 
 			function Sort(direction){
-				var entryBox = document.getElementById('multibox1');
 				SetEntryBox(direction == 1 ?
 					entryBox.value.split("\n").sort().join("\n")
 					:
@@ -214,18 +217,34 @@
 			}
 
 			function Clear(){
+				DeletedText = entryBox.value;
 				SetEntryBox("");
 			}
 
+			function UndoDelete(){
+				SetEntryBox(DeletedText + entryBox.value);
+				DeletedText = "";
+			}
+
 			function SetEntryBox(value){
-				var entryBox = document.getElementById('multibox1');
 				entryBox.value = value;
 
 				TextBoxChanged();
 			}
 
+			function RemoveDups() {
+				let current = entryBox.value.split("\n");
+				let unique = {};
+				let a = 1;
+				current.forEach(function(i) {
+					if(!unique[i]) {
+						unique[i] = a++;
+					}
+				});
+				SetEntryBox(Object.keys(unique).sort(function(a,b){return unique[a]-unique[b]}).join("\n"));
+			}
+
 			function TextBoxChanged(){
-				var entryBox = document.getElementById('multibox1');
 				numberOfLinesTextbox = document.getElementById('NumberOfLines');
 				
 

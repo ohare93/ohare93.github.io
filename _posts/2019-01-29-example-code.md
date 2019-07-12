@@ -3,7 +3,7 @@ layout: post
 title:  "Test"
 date:   2019-01-28 15:58:16 -0000
 categories: [test]
-tags:
+tags: [test]
 published: true
 hidden: true
 author: "Bart Simpson"
