@@ -1,4 +1,43 @@
 
+<style type="text/css">
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+</style>
+
+
 <html>
 	<head>
 	<meta charset="utf-8">
@@ -20,6 +59,14 @@
 				onclick="Sort(-1)">Z->A</button>
 			<button title="Remove duplicate entries"
 				onclick="RemoveDups()">Remove Dups</button>
+			<div class="dropdown">
+				<button onclick="CaseDropdown()" class="dropbtn">Case?</button>
+				<div id="CaseDropdown" class="dropdown-content">
+					<a onclick="CaseDropdownSelection(1)">Lower</a>
+					<a onclick="CaseDropdownSelection(2)">Proper</a>
+					<a onclick="CaseDropdownSelection(0)">Upper</a>
+				</div>
+				</div>
 			<button title="Clear the textbox"
 				onclick="Clear()">Clear</button>
 				
@@ -99,6 +146,10 @@
 			var NumberOfLinesToOpen = 0;
 			var DeletedText = "";
 			var entryBox = document.getElementById('multibox1');
+
+			String.prototype.toProperCase = function () {
+				return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+			};
 			
 			//Setup the buttons and checkboxes programmatically
 			document.addEventListener("DOMContentLoaded", function(event) { 
@@ -256,6 +307,33 @@
 				}
 				numberOfLinesTextbox.textContent = count;			
 				NumberOfValidLines = count;	
+			}
+
+			function CaseDropdown(){
+				document.getElementById("CaseDropdown").classList.toggle("show");
+			}
+
+			function CaseDropdownSelection(value){
+				if(value == 0){
+					SetEntryBox(entryBox.value.toUpperCase());
+				}else if(value == 1){
+					SetEntryBox(entryBox.value.toLowerCase());
+				}else if(value == 2){
+					SetEntryBox(entryBox.value.toProperCase());
+				}
+			}
+
+			window.onclick = function(event) {
+				if (!event.target.matches('.dropbtn')) {
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
 			}
 		</script>
 	</body>
