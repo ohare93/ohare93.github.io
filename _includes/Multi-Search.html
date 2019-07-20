@@ -99,42 +99,52 @@
 		<div id="SiteButtons"></div>
 
 		<script>
-			var SitesEnum = Object.freeze({
-				"Forvo":{
-					"id": 1,
-					"pre":"http://www.forvo.com/word/",
-					"post":"/#da",
-					"description": "Forvo.com, for pronunciation audio files"
+			var SitesEnum = Object.freeze(
+				{"Danish":{
+					"Forvo":{
+						"id": 1,
+						"pre":"http://www.forvo.com/word/",
+						"post":"/#da",
+						"description": "Forvo.com, for pronunciation audio files"
+					},
+					"GImage":{
+						"id": 2,
+						"pre":"https://www.google.dk/search?tbm=isch&q=",
+						"post":"",
+						"description": "Google Image, in Danish"
+					},
+					"GTrans":{
+						"id": 3,
+						"pre":"https://translate.google.com/#view=home&op=translate&sl=da&tl=en&text=",
+						"post":"",
+						"description": "Google Translate, Danish -> English"
+					},
+					"Babla":{
+						"id": 4,
+						"pre":"https://en.bab.la/dictionary/english-danish/",
+						"post":"",
+						"description": "Bab.la, an online dictionary"
+					},
+					"Ordnet":{
+						"id": 5,
+						"pre":"https://ordnet.dk/ddo/ordbog?query=",
+						"post":"",
+						"description": "Ordnet.dk, a Danish online dictionary"
+					},
+					"Verbix":{
+						"id": 6, 
+						"pre":"http://www.verbix.com/webverbix/go.php?T1=", 
+						"post":"&Submit=Go&D1=26&H1=126",
+						"description": "Verbix.com, for verb conjugator"
+					}
 				},
-				"GImage":{
-					"id": 2,
-					"pre":"https://www.google.dk/search?tbm=isch&q=",
-					"post":"",
-					"description": "Google Image, in Danish"
-				},
-				"GTrans":{
-					"id": 3,
-					"pre":"https://translate.google.com/#view=home&op=translate&sl=da&tl=en&text=",
-					"post":"",
-					"description": "Google Translate, Danish -> English"
-				},
-				"Babla":{
-					"id": 4,
-					"pre":"https://en.bab.la/dictionary/english-danish/",
-					"post":"",
-					"description": "Bab.la, an online dictionary"
-				},
-				"Ordnet":{
-					"id": 5,
-					"pre":"https://ordnet.dk/ddo/ordbog?query=",
-					"post":"",
-					"description": "Ordnet.dk, a Danish online dictionary"
-				},
-				"Verbix":{
-					"id": 6, 
-					"pre":"http://www.verbix.com/webverbix/go.php?T1=", 
-					"post":"&Submit=Go&D1=26&H1=126",
-					"description": "Verbix.com, for verb conjugator"
+				"Esperanto":{
+					"GImage":{
+						"id": 2,
+						"pre":"https://www.google.com/search?hl=eo&tbm=isch&q=",
+						"post":"",
+						"description": "Google Image, in Danish"
+					}
 				}
 			});
 			Object.freeze(SitesEnum);
@@ -151,26 +161,34 @@
 				return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 			};
 			
+			function fragmentFromString(strHTML) {
+				return document.createRange().createContextualFragment(strHTML);
+			}
+
 			//Setup the buttons and checkboxes programmatically
 			document.addEventListener("DOMContentLoaded", function(event) { 
-			  var buttonsWanted = 10;
-			  var doc = document;
-			  var docFrag = document.createDocumentFragment();
-
-			  for(var key in SitesEnum){
-				var button = doc.createElement('button');
-				button.innerHTML = key;
-				button.setAttribute('onclick', ('searchmulti(' + SitesEnum[key].id + ');'));
-				button.setAttribute('title', (SitesEnum[key].description));
-				docFrag.appendChild(button);
+				var buttonsWanted = 10;
+				var doc = document;
+				var docFrag = document.createDocumentFragment();
 				
-				var checkbox = doc.createElement('input');
-				checkbox.setAttribute('type', 'checkbox');
-				checkbox.setAttribute('id', key + 'checkbox');
-				docFrag.appendChild(checkbox);
-			  }
+				for(var lang in SitesEnum){
+					docFrag.appendChild(fragmentFromString(lang + ": "));
+					for(var key in SitesEnum[lang]){
+						var button = doc.createElement('button');
+						button.innerHTML = key;
+						button.setAttribute('onclick', ('searchmulti(' + SitesEnum[lang][key].id + ');'));
+						button.setAttribute('title', (SitesEnum[lang][key].description));
+						docFrag.appendChild(button);
 
-			  doc.getElementById('SiteButtons').appendChild(docFrag);
+						var checkbox = doc.createElement('input');
+						checkbox.setAttribute('type', 'checkbox');
+						checkbox.setAttribute('id', key + 'checkbox');
+						docFrag.appendChild(checkbox);
+					}
+					docFrag.appendChild(fragmentFromString("<br>"));
+				}
+
+				doc.getElementById('SiteButtons').appendChild(docFrag);
 			});
 			
 			function searchmulti(e){
