@@ -19,19 +19,7 @@ This blog is dedicated to anything and everything I find interesting, such as Le
     {% if post.hidden != true and post.categories[0] != "Tool" %}
       <li><a href="{{ post.url }}">{{ post.title }}</a>
         <br>
-        <h5>{{ post.date | date: "%-d %B %Y" }} - 
-        {% assign num = post.categories.size %}
-        {% if num > 1 %} {% for i in (0..(num-1)) %}
-            {{ post.categories[i] }},
-        {% endfor %} {% endif %}
-        {{ post.categories.last }}
-        -
-        {% assign num = post.tags.size %}
-        {% if num > 1 %} {% for i in (0..(num-1)) %}
-            {{ post.tags[i] }},
-        {% endfor %} {% endif %}
-        {{ post.tags.last }}
-        </h5>
+        <h5>{{ post.date | date: "%-d %B %Y" }} - {{ post.categories | array_to_sentence_string: "|" }} - {{ post.tags | array_to_sentence_string: "|" }}</h5>
       </li>
     {% endif %}
   {% endfor %}
@@ -45,19 +33,7 @@ This blog is dedicated to anything and everything I find interesting, such as Le
     {% if post.hidden == true %}
     <li><a href="{{ post.url }}">{{ post.title }}</a>
        <br>
-       <h5>{{ post.date | date: "%-d %B %Y" }} - 
-       {% assign num = post.categories.size %}
-        {% if num > 1 %} {% for i in (0..(num-1)) %}
-            {{ post.categories[i] }},
-        {% endfor %} {% endif %}
-        {{ post.categories.last }}
-        -
-        {% assign num = post.tags.size %}
-        {% if num > 1 %} {% for i in (0..(num-1)) %}
-            {{ post.tags[i] }},
-        {% endfor %} {% endif %}
-        {{ post.tags.last }}
-        </h5>
+       <h5>{{ post.date | date: "%-d %B %Y" }} - {{ post.categories | array_to_sentence_string: "|" }} - {{ post.tags | array_to_sentence_string: "|" }}</h5>
     </li>
     {% endif %}
   {% endfor %}
@@ -79,34 +55,6 @@ This blog is dedicated to anything and everything I find interesting, such as Le
   {% endfor %}
 </ul>
 
-<!-- <h1>Posts by Category</h1>
-
-{% assign items = site.categories | sort %}
-{% for category in items %}
-  <h3>{{ category[0] }}</h3>
-  <ul>
-    {% for post in category[1] %}
-      {% if post.menu != 'review' and post.hidden != true %}
-        <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%-d %B %Y" }} </a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-{% endfor %} -->
-
-<!-- 
-<h1>Posts by Tag</h1>
-
-{% assign items = site.tags | sort %}
-{% for tags in items %}
-  <h3>{{ tags[0] }}</h3>
-  <ul>
-    {% for post in tags[1] %}
-      {% if post.menu != 'review' %}
-        <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: "%-d %B %Y" }} </a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-{% endfor %} -->
 
 <h6>
 Last Updated at: {{ site.time }}
