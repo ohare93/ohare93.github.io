@@ -1,5 +1,6 @@
-var SitesEnum = Object.freeze(
-    {"Danish":{
+var SitesEnum = Object.freeze({
+    
+    "Danish":{
         "Forvo":{
             "pre":"http://www.forvo.com/word/",
             "post":"/#da",
@@ -36,6 +37,9 @@ var SitesEnum = Object.freeze(
             "description": "Examples Sentences from Tatoeba"
         }
     },
+
+
+
     "Esperanto":{
         "Forvo":{
             "pre":"http://www.forvo.com/word/",
@@ -63,4 +67,6 @@ var SitesEnum = Object.freeze(
             "description": "Esperanto Dictionary"
         }
     }
+
+    
 });

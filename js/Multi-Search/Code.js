@@ -162,12 +162,6 @@ function UndoDelete(){
     DeletedText = "";
 }
 
-function SetEntryBox(value){
-    entryBox.value = value;
-
-    TextBoxChanged();
-}
-
 function RemoveDups() {
     let current = entryBox.value.split("\n");
     let unique = {};
@@ -180,18 +174,29 @@ function RemoveDups() {
     SetEntryBox(Object.keys(unique).sort(function(a,b){return unique[a]-unique[b]}).join("\n"));
 }
 
-function TextBoxChanged(){
-    numberOfLinesTextbox = document.getElementById('NumberOfLines');
-    
+function EOReplace(){
+    let current = entryBox.value;
 
-    var lines = entryBox.value.split("\n");
-    var count = 0;
-    for(var a = 0; a < lines.length; a++){
-        if(lines[a] != "")
-            count++;
-    }
-    numberOfLinesTextbox.textContent = count;			
-    NumberOfValidLines = count;	
+    current = current.replace(/gx/g, "ĝ");
+    current = current.replace(/Gx/g, "Ĝ");
+    current = current.replace(/GX/g, "Ĝ");
+    current = current.replace(/cx/g, "ĉ");
+    current = current.replace(/Cx/g, "Ĉ");
+    current = current.replace(/CX/g, "Ĉ");
+    current = current.replace(/hx/g, "ĥ");
+    current = current.replace(/Hx/g, "Ĥ");
+    current = current.replace(/HX/g, "Ĥ");
+    current = current.replace(/jx/g, "ĵ");
+    current = current.replace(/Jx/g, "Ĵ");
+    current = current.replace(/JX/g, "Ĵ");
+    current = current.replace(/sx/g, "ŝ");
+    current = current.replace(/Sx/g, "Ŝ");
+    current = current.replace(/SX/g, "Ŝ");
+    current = current.replace(/ux/g, "ŭ");
+    current = current.replace(/Ux/g, "Ŭ");
+    current = current.replace(/UX/g, "Ŭ");
+
+    SetEntryBox(current);
 }
 
 function CaseDropdown(){
@@ -220,4 +225,23 @@ window.onclick = function(event) {
         }
     }
 }
-		
+
+function SetEntryBox(value){
+    entryBox.value = value;
+
+    TextBoxChanged();
+}
+
+function TextBoxChanged(){
+    numberOfLinesTextbox = document.getElementById('NumberOfLines');
+    
+
+    var lines = entryBox.value.split("\n");
+    var count = 0;
+    for(var a = 0; a < lines.length; a++){
+        if(lines[a] != "")
+            count++;
+    }
+    numberOfLinesTextbox.textContent = count;			
+    NumberOfValidLines = count;	
+}
