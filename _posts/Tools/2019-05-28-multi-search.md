@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Danish Multi-Search Tool"
+title:  "Multi-Search Tool"
 date:   2019-05-22 12:00:00 -0000
 categories: [Tool]
 tags: [Anki]

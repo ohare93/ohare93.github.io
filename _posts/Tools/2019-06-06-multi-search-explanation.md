@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Danish Multi-Search Tool Explanation"
+title:  "Multi-Search Tool Explanation"
 date:   2019-05-22 12:00:00 -0000
 categories: [Productivity]
 tags: [SRS, Tool]
@@ -23,6 +23,7 @@ There are a few sites I frequent whenever I am studying Danish:
 - **[Verbix][Verbix]**: to lookup verb conjugations.
 - **[Ordnet][Ordnet]**: to get definitions in Danish, which I can sometimes muddle through.
 - **[Bab.la][Babla]** and **[Google Translate][GoogleTranslateDA-EN]**: and for when I can't muddle through the above, I use these sites to get definitions. They are not nearly as reliable as a native dictionary, though.
+- **[Tatoeba][Tatoeba]**: to get examples sentences which use words I want to learn, from any starting language.
 
 
 ### How does it work?
@@ -57,6 +58,7 @@ You may have to allow your browser to open multiple tabs at once, the first time
 [Babla]: https://en.bab.la/
 [Ordnet]: https://ordnet.dk/ddo/
 [Verbix]: http://www.verbix.com/languages/danish.html
+[Tatoeba]: https://tatoeba.org/eng/sentences/search?from=dan&to=eng
 
 
 
