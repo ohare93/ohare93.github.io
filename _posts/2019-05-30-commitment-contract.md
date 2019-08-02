@@ -17,11 +17,13 @@ For each task I have set an average amount I must complete each week (shown belo
 For example: ~~When~~ If I fail then Beeminder will **_Charge My Bank Account $1_** :dollar: then next time I fail it will be $2. Though I have mine set to $0 initially, while I get used to the system.
 
 
-/*<div class="footer-col one-half">
+<!--
+<div class="footer-col one-half">
     <h3>Danish Homework</h3>
     <iframe src="https://www.beeminder.com/widget?slug=danishhomework&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe>
     <p><u>Average per week:</u> 4 hours of Danish Homework. Time tracked on Toggl.</p>
-</div>*/
+</div>
+-->
 
 <div class="footer-col to-the-right one-half">
     <h3>Software Study</h3>
