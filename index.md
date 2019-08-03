@@ -19,7 +19,7 @@ This blog is dedicated to anything and everything I find interesting, such as Le
     {% if post.hidden != true and post.categories[0] != "Tool" %}
       <li><a href="{{ post.url }}">{{ post.title }}</a>
         <br>
-        <h5>{{ post.date | date: "%-d %B %Y" }} - {{ post.categories | array_to_sentence_string: "|" }} - {{ post.tags | array_to_sentence_string: "|" }}</h5>
+        <h5>{{ post.date | date: "%-d %B %Y" }} - {{ post.categories | array_to_sentence_string: "" }} - {{ post.tags | array_to_sentence_string: "" }}</h5>
       </li>
     {% endif %}
   {% endfor %}
@@ -33,7 +33,7 @@ This blog is dedicated to anything and everything I find interesting, such as Le
     {% if post.hidden == true %}
     <li><a href="{{ post.url }}">{{ post.title }}</a>
        <br>
-       <h5>{{ post.date | date: "%-d %B %Y" }} - {{ post.categories | array_to_sentence_string: "|" }} - {{ post.tags | array_to_sentence_string: "|" }}</h5>
+       <h5>{{ post.date | date: "%-d %B %Y" }} - {{ post.categories | array_to_sentence_string: "" }} - {{ post.tags | array_to_sentence_string: "" }}</h5>
     </li>
     {% endif %}
   {% endfor %}
