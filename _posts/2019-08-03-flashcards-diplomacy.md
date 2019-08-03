@@ -4,7 +4,7 @@ title:  "Diplomacy Flashcards"
 date:   2019-08-03 12:00:00 -0000
 categories: [Games]
 tags: [Diplomacy, Anki, Flashcard Deck]
-permalink: Diplomacy-Flashcards
+permalink: diplomacy-flashcards
 published: true
 hidden: false
 github_comments_issueid: 7
