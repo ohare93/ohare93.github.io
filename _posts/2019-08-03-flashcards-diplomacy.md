@@ -44,7 +44,7 @@ The cards were made using the lovely [Image Occlusion Enhanced Add-on][ImageOccl
 -----
 
 
-## Hard Mode Deck
+## Hardcore Deck
 
 Do you want a more challenging version of the deck, where no other countries are shown? Look no further:
 
