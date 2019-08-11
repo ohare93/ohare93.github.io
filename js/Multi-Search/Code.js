@@ -16,44 +16,6 @@ function fragmentFromString(strHTML) {
     return document.createRange().createContextualFragment(strHTML);
 }
 
-//Setup the buttons and checkboxes programmatically
-document.addEventListener("DOMContentLoaded", function(event) { 
-    let docFrag = document.createDocumentFragment();
-    let counterKey = 0;
-    
-    for(var lang in SitesEnum){
-        docFrag.appendChild(fragmentFromString(lang + ": "));
-        for(var key in SitesEnum[lang]){
-            let id = SitesEnum[lang][key].id = counterKey;
-
-            var button = document.createElement('button');
-            button.innerHTML = key;
-            button.setAttribute('onclick', ('searchmulti(' + id + ');'));
-            button.setAttribute('title', (SitesEnum[lang][key].description));
-            docFrag.appendChild(button);
-
-            var checkbox = document.createElement('input');
-            checkbox.setAttribute('type', 'checkbox');
-            checkbox.setAttribute('id', 'checkbox' + id);
-            docFrag.appendChild(checkbox);
-
-            counterKey++;
-        }
-        docFrag.appendChild(fragmentFromString("<br>"));
-    }
-
-    document.getElementById('SiteButtons').appendChild(docFrag);
-    Object.freeze(SitesEnum);
-
-
-    for(var lang in SitesEnum){
-        for(var key in SitesEnum[lang]){
-            SiteCheckboxes[SitesEnum[lang][key].id] = document.getElementById('checkbox' + SitesEnum[lang][key].id);
-        }
-    }
-    
-});
-
 function searchmulti(e){
     ButtonHit = e;
     
@@ -143,11 +105,17 @@ function RemoveWhiteSpace(){
 }
 
 function Sort(direction){
-    SetEntryBox(direction == 1 ?
-        entryBox.value.split("\n").sort().join("\n")
-        :
-        entryBox.value.split("\n").sort().reverse().join("\n")
-    );
+    var newValue = entryBox.value.split("\n");
+
+    newValue = newValue.sort(function (a, b) {
+        return b.toLowerCase().localeCompare(a.toLowerCase());
+    });
+
+    if(direction == 1){
+        newValue = newValue.reverse();
+    }
+
+    SetEntryBox(newValue.join("\n"));
     
     RemoveWhiteSpace();
 }
