@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "test": "jasmine"
+    },
+    "dependencies": {
+        "jasmine": "^3.4.0",
+        "jsdom": "^15.1.1"
+    }
+}
