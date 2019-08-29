@@ -66,6 +66,34 @@ var SitesEnum = Object.freeze({
             "post":"",
             "description": "Esperanto Dictionary"
         }
+    },
+
+    "Japanese":{
+        "Forvo":{
+            "pre":"http://www.forvo.com/word/",
+            "post":"/#ja",
+            "description": "Forvo.com, for pronunciation audio files"
+        },
+        "GImage":{
+            "pre":"https://www.google.com/search?hl=ja&tbm=isch&q=",
+            "post":"",
+            "description": "Google Image, in Japanese"
+        },					
+        "GTrans":{
+            "pre":"https://translate.google.com/#view=home&op=translate&sl=ja&tl=en&text=",
+            "post":"",
+            "description": "Google Translate, Japanese -> English"
+        },
+        "Tatoeba":{
+            "pre":"https://tatoeba.org/eng/sentences/search?query=",
+            "post":"&from=jpn&to=eng",
+            "description": "Examples Sentences from Tatoeba"
+        },
+        "Jisho":{
+            "pre":"https://jisho.org/search/",
+            "post":"",
+            "description": "Japanese Dictionary"
+        }
     }
 
     
