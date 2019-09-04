@@ -34,7 +34,7 @@ For example: ~~When~~ If I fail then Beeminder will **_Charge My Bank Account $1
 <div class="footer-col one-half">
     <h3>Blog Activity</h3>
     <p><iframe src="https://www.beeminder.com/widget?slug=blogactivity&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe></p>
-    <p><u>Average per week:</u> 1 update to my blog. Tracked manually.</p>
+    <p><u>Average per month:</u> 1 proper update to my blog. Tracked manually.</p>
 </div>
 
 <div class="footer-col to-the-right one-half">
@@ -46,13 +46,7 @@ For example: ~~When~~ If I fail then Beeminder will **_Charge My Bank Account $1
 <div class="footer-col one-half">
     <h3>Running</h3>
     <p><iframe src="https://www.beeminder.com/widget?slug=running&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe></p>
-    <p><u>Average per week:</u> 2 runs. Tracked manually.</p>
-</div>
-
-<div class="footer-col to-the-right one-half">
-    <h3>Free Weights</h3>
-    <p><iframe src="https://www.beeminder.com/widget?slug=freeweights&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe></p>
-    <p><u>Average per week:</u> 3 sessions of free weight training. Tracked manually.</p>
+    <p><u>Average per week:</u> run 10km. Tracked manually.</p>
 </div>
 
 <div class="footer-col one-half">
