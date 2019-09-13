@@ -25,9 +25,9 @@ This blog is dedicated to anything and everything I find interesting, such as Le
   {% endfor %}
 </ul>
 
-
+<!-- Production Only Code -->
 {% if jekyll.environment != 'production' %}
-<h2>Dev Only Posts</h2>
+<h2>:exclamation: Dev Only Posts :exclamation:</h2>
 <ul>
   {% for post in site.posts %}
     {% if post.hidden == true %}
@@ -40,15 +40,20 @@ This blog is dedicated to anything and everything I find interesting, such as Le
 </ul>
 
 {% endif %}
+<!-- Production Only Code -->
 
 
-<h3>Tools</h3>
+<h2>Tools :gear: :hammer:</h2>
 <ul>
   {% for post in site.posts %}
     {% if post.hidden != true %}
       {% for category in post.categories %}
         {% if category == 'Tool' %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <br>
+            <h5>{{ post.description }}</h5>
+          </li>
         {% endif %}
       {% endfor %}
     {% endif %}
