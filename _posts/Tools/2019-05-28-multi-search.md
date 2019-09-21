@@ -7,7 +7,7 @@ tags: [Anki]
 permalink: tools/multi-search
 published: true
 hidden: false
-# github_comments_issueid: 2
+github_comments_issueid: 2
 description: A search tool used to quickly gather translations, images, and audio. Used to quickly create flashcards.
 ---
 
