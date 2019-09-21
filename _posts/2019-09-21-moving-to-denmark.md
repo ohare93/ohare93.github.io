@@ -76,6 +76,9 @@ Online Application for CPR Number if you will live in Copenhagen. [Link][CPR Num
 TODO: EU Residence Document
  - What it is
  - How to do it
+ - Register for [meeting online][State Admin Book Time], but it's usually filled up so just show up in person (TODO: Location of "State Administration")
+
+[State Admin Book Time]: https://kk.reservertid.nu/Time/1057?pid=1113
 
 
 TODO: Skat
