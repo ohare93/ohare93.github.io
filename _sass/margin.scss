@@ -1,0 +1,73 @@
+@charset "utf-8";
+body {
+    counter-reset: reference;   
+    counter-increment: reference; 
+}
+
+#as:after {
+    content: counter(reference);
+    color: #999999;
+    vertical-align: super;
+    font-size: .7em;
+    counter-increment: reference;
+}
+
+#mar {
+    font-size: 0.82352941em;
+    line-height: 2.14285714;
+    position: absolute;
+    left: 59%;
+    right: 1em;
+    margin-left: 23em;
+    max-width: 16em;
+    text-align: left;
+    color: #a7a4a4;
+
+    &:before {
+        content: counter(reference) " – ";
+    }
+    &:after {
+        content: ".";
+    }
+    > code, > a {
+        color: #717171;
+        background: none;
+        border: none; 
+    }
+}
+
+
+// @media (min-width: 1200px) {
+//     .as:after {
+//         content: counter(reference);
+//         color: #999999;
+//         vertical-align: super;
+//         font-size: .7em;
+//         counter-increment: reference;
+//     }
+//     .br {
+//         display: none;
+//     }
+//     .mar {
+//         font-size: 0.82352941em;
+//         line-height: 2.14285714;
+//         position: absolute;
+//         left: 59%;
+//         right: 1em;
+//         margin-left: 23em;
+//         max-width: 16em;
+//         text-align: left;
+//         color: #999999;
+//     }
+//     .mar:before {
+//         content: counter(reference) " – ";
+//     }
+//     .mar:after {
+//         content: ".";
+//     }
+//     .mar code, .mar a {
+//         color: #717171;
+//         background: none;
+//         border: none; 
+//     }
+// }
