@@ -102,8 +102,7 @@ TODO: NemID
      - Link to app
      - App takes 1 hour to setup
  - Instruction for getting a NemID
-   - Place to go, how to book it, what you need beforehand
-   - They give you a temporary username and password.
+   - Place to go, how to book it, what you need beforehand {% include margin.html content="They give you a temporary username and password" %}
    - Key booklet will be sent in the post and can take up to a week to arrive, after which you can change to the app
    - Can bring along a Danish partner who can sign some things and vouch for your identity, in order to get the booklet immediately 
    - Will need your passport for ID
