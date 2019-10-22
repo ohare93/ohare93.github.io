@@ -20,8 +20,7 @@ TODO: Introduction
 To share my own experiences on the process of moving to Denmark. 
 
 
-<div id="as"></div><div id="mar">State the order things have to happen in</div>
-
+{% include margin.html content="State the order things have to happen in" %}
 
 
 # Living
