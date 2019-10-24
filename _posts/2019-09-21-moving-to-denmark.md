@@ -17,10 +17,23 @@ TODO: Table of contents
 
 TODO: Introduction
 
-To share my own experiences on the process of moving to Denmark. 
+#### In late February 2019 I moved from the UK :uk: to Denmark :denmark:
+
+During this process I had to navigate a lot of bureaucracy and learn to navigate and live in an unfamiliar system. This post is an attempt to spread out some of that information to others, in the hopes that their move is smoother and less confused than my own.
+
+It contains information on 
+ - Clarifications about unfamiliar terms{% include margin.html content="CPR, Skat, NemID, E-Boks, Yellow Card, etc" %}
+ - Necessary bureaucratic tasks I had to do along the way
+ - A few tips I wish I had known ahead of time
+ - Some opinions!{% include margin.html content="An unspecified amount" %}
 
 
-{% include margin.html content="State the order things have to happen in" %}
+TODO: State the order things have to happen in
+
+Things not covered in this page:
+ - How a non-eu citizen emigrates to Denmark
+ - How to find a place to live
+TODO: more here
 
 
 # Living
@@ -50,6 +63,16 @@ TODO: Finding a home
 
 
 # Bureaucracy
+
+#### Terms
+
+| CPR | The "Central Person Registration Number" is tied to your individually, and is many official places |
+| Skat | The government treasury. They are who you will be paying tax to | 
+| NemID | Single login for Danish internet banks and government websites |
+| E-Boks | Your government online inbox for mail |
+| Yellow Card | Your Danish national health insurance card |
+
+{% include margin.html content="Skat also means \"treasure\"" %}
 
 
 I got most of my information from this [International Citizen Service "Moving to Denmark?" webpage][International Citizen Service]
