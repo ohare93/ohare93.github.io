@@ -66,13 +66,13 @@ TODO: Finding a home
 
 #### Terms
 
-| CPR | The "Central Person Registration Number" is tied to your individually, and is many official places |
-| Skat | The government treasury. They are who you will be paying tax to | 
-| NemID | Single login for Danish internet banks and government websites |
-| E-Boks | Your government online inbox for mail |
-| Yellow Card | Your Danish national health insurance card |
+| CPR | The "Central Person Registration Number" is the unique identifying number used to connect you to official documents and websites |
+| NemID | Single login for Danish internet banks and government websites -- your CPR number is your password |
+| E-Boks | Your online inbox for official mail (banks/tax/etc) |
+| Skat | The government tax office / treasury -- they are who you will be paying tax to {% include margin.html content="Skat also means \"treasure\", so don't get confused if you think people in Denmark call their loved ones \"Tax office\"" %} | 
+| Yellow Card | Your Danish National Health Insurance card, used for all medical appointments |
 
-{% include margin.html content="Skat also means \"treasure\"" %}
+
 
 
 I got most of my information from this [International Citizen Service "Moving to Denmark?" webpage][International Citizen Service]
