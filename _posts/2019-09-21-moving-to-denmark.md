@@ -10,6 +10,7 @@ hidden: true
 github_comments_issueid: 8
 ---
 
+TODO: Apply :link: to all general links
 
 TODO: Table of contents
 
@@ -19,9 +20,9 @@ TODO: Introduction
 
 #### In late February 2019 I moved from the UK :uk: to Denmark :denmark:
 
-During this process I had to navigate a lot of bureaucracy and learn to navigate and live in an unfamiliar system. This post is an attempt to spread out some of that information to others, in the hopes that their move is smoother and less confused than my own.
+During this process I had to navigate a lot of bureaucracy and learn to navigate and live in an unfamiliar system. This post is an attempt to give back some of that information to others, in the hopes that their move is smoother and less confusing than my own.
 
-It contains information on 
+This post contains:
  - Clarifications about unfamiliar terms{% include margin.html content="CPR, Skat, NemID, E-Boks, Yellow Card, etc" %}
  - Necessary bureaucratic tasks I had to do along the way
  - A few tips I wish I had known ahead of time
@@ -64,11 +65,11 @@ TODO: Finding a home
 
 # Bureaucracy
 
-#### Terms
+#### General Overview
 
-| CPR | The "Central Person Registration Number" is the unique identifying number used to connect you to official documents and websites |
+| CPR# | The "Central Person Registration Number" is the unique identifying number used to connect you to official documents and websites |
 | NemID | Single login for Danish internet banks and government websites -- your CPR number is your password |
-| E-Boks | Your online inbox for official mail (banks/tax/etc) |
+| E&#8209;Boks | Your online inbox for official mail (banks/tax/etc) |
 | Skat | The government tax office / treasury -- they are who you will be paying tax to {% include margin.html content="Skat also means \"treasure\", so don't get confused if you think people in Denmark call their loved ones \"Tax office\"" %} | 
 | Yellow Card | Your Danish National Health Insurance card, used for all medical appointments |
 
@@ -86,12 +87,37 @@ Step 4: Apply for a tax card
 ```
 
 
-TODO: CPR Number
- - What it is
- - How to do so
- - Central Person Registration Number
+## CPR Number
+`Central Person Registration Number` is the first and most important thing to get. It is used for most things in Denmark
 
-Online Application for CPR Number if you will live in Copenhagen. [Link][CPR Number Application Copenhagen]
+> Residents of Denmark are legally required to have a CPR number. You will also notice that your CPR number allows you to access a range of services in Denmark. **You will need it to open a bank account, get a Danish phone number, borrow materials from the library, pay tax, receive salary, etc.**
+
+
+A CPR# is 8 digits followed by 4 digits: the first are your birthday (25/01/1987 would be "25011987") and the last are a unique identifier. {% include margin.html content="Males CPR# end in an odd # and females end in an even" %} 
+
+:link: [General information about your CPR#][How to get a CPR number]
+
+:link: [Online Application for CPR Number if you will live in Copenhagen][CPR Number Application Copenhagen]
+
+[How to get a CPR number]: https://international.kk.dk/artikel/how-do-i-get-cpr-number
+
+### Yellow Card
+![Image](/assets/Moving-To-Denmark/yellow-health-card.png)
+ - Your Danish Health card, associated with your CPR#.
+ - Essentially the Danish version of a "Blue Card" aka "European Health Insurance Card"
+ - It has your doctors name/address/contact details on it, and you'll get a new one whenever you switch doctors.
+
+ :link: [General Information about Yellow Cards][Getting a Yellow Card]
+
+ [Getting a Yellow Card]: https://international.kk.dk/healthcard
+
+#### Doctors
+ - Going to the Doctors / Pharmacy
+   - Sign into the doctors by swiping your yellow card. This lets them know you have arrived for your appointment, and verifies your identity.
+   - If you are prescribed medicine it is associated with your yellow card. Simply go to the pharmacy (take a ticket!) and they will ask for your yellow card so they can scan it and confirm you have some prescriptions waiting for you
+ - [Email Consultation][EmailKonsultation.dk] is a good way to get medical advice from your doctor, simply by loggin on and sending them a message. You cannot upload pictures, but you can link to them.
+
+
 
 
 TODO: EU Residence Document
@@ -139,25 +165,19 @@ TODO: Bank Account
 TODO: E-Boks
  - Mail account for Bank/Tax/Work
 
-TODO: Yellow Card
- - Your Danish Health card, associated with your CPR#.
- - Essentially the Danish version of a "Blue Card" aka "European Health Insurance Card"
- - Going to the Doctors / Pharmacy
-   - Sign into the doctors by swiping your yellow card. This lets them know you have arrived for your appointment, and verifies your identity.
-   - If you are prescribed medicine it is associated with your yellow card. Simply go to the pharmacy (take a ticket!) and they will ask for your yellow card so they can scan it and confirm you have some prescriptions waiting for you
- - [Email Consultation][EmailKonsultation.dk] is a good way to get medical advice from your doctor, simply by loggin on and sending them a message. You cannot upload pictures, but you can link to them.
+
 
 # Danish Language Classes
 
 TODO: Learning Danish
 Government courses seem expensive and restrictive
-- You will be sent a letter after you register for a CPR saying you have to register with a Danish Language Centre within 30days of this letter, otherwise you will lose your entitlement to Government courses. You can register with them and say they will not take any lessons at that time, and instead go with a private school.
+ - You will be sent a letter after you register for a CPR saying you have to register with a Danish Language Centre within 30days of this letter, otherwise you will lose your entitlement to Government courses. You can register with them and say they will not take any lessons at that time, and instead go with a private school.
 
-Private schools are great
+ - Private schools are great
 
-Private lessons online
-Immersion Courses
-Have a Danish partner
+ - Private lessons online
+ - Immersion Courses
+ - Have a Danish partner
 
 
 # Misc
@@ -187,6 +207,9 @@ Moving to Denmark with Pets
 Library
  - [Bibliotek.dk][Bibliotek]
 
+
+
+If I've missed anything, or my information is out of date, please let me know in the comments below!
 
 
 <!----------------------------->
