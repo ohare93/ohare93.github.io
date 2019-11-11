@@ -86,3 +86,7 @@ Reference needs to be lower case, with spaces changes to -s
     {% endfor %} {% endif %}
     {{ post.tags.last }}
 {% endraw %}{% endhighlight %}
+
+#### Non Breaking Characters:
+
+| NB - | &#8209; |

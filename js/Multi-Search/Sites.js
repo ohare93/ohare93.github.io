@@ -56,6 +56,16 @@ var SitesEnum = Object.freeze({
             "post":"",
             "description": "Google Translate, Esperanto -> English"
         },
+        "Babla":{
+            "pre":"https://en.bab.la/dictionary/esperanto-english/",
+            "post":"",
+            "description": "Bab.la, an online dictionary"
+        },
+        "Ordnet":{
+            "pre":"https://ordnet.dk/ddo/ordbog?query=",
+            "post":"",
+            "description": "Ordnet.dk, a Danish online dictionary"
+        },
         "Tatoeba":{
             "pre":"https://tatoeba.org/eng/sentences/search?query=",
             "post":"&from=epo&to=eng",

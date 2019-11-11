@@ -27,32 +27,38 @@ For example: ~~When~~ If I fail then Beeminder will **_Charge My Bank Account $1
 
 <div class="footer-col to-the-right one-half">
     <h3>Software Study</h3>
-    <iframe src="https://www.beeminder.com/widget?slug=softwarestudy&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe>
     <p><u>Average per week:</u> 1½ hours of reading Programming books. Time tracked on Toggl.</p>
+    <iframe src="https://www.beeminder.com/widget?slug=softwarestudy&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe>
 </div>
 
 <div class="footer-col one-half">
     <h3>Blog Activity</h3>
-    <p><iframe src="https://www.beeminder.com/widget?slug=blogactivity&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe></p>
     <p><u>Average per month:</u> 1 proper update to my blog. Tracked manually.</p>
+    <p><iframe src="https://www.beeminder.com/widget?slug=blogactivity&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe></p>
 </div>
 
 <div class="footer-col to-the-right one-half">
     <h3>Flashcards</h3>
-    <p><iframe src="https://www.beeminder.com/widget?slug=flashcards&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe></p>
     <p><u>Once a day, every day.</u> Tracked manually.</p>
+    <p><iframe src="https://www.beeminder.com/widget?slug=flashcards&username=jimjam2629" height="245px" width="230px" frameborder="0px" ></iframe></p>
 </div>
 
 <div class="footer-col one-half">
     <h3>Running</h3>
-    <p><iframe src="https://www.beeminder.com/widget?slug=running&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe></p>
     <p><u>Average per week:</u> run 10km. Tracked manually.</p>
+    <p><iframe src="https://www.beeminder.com/widget?slug=running&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe></p>
+</div>
+
+<div class="footer-col to-the-right one-half">
+    <h3>Mindfulness Meditation</h3>
+    <p><u>Once a day, every day.</u> Tracked manually.</p>
+    <p><iframe src="https://www.beeminder.com/widget?slug=meditiation&username=jimjam2629" height="245px" width="230px" frameborder="0px" ></iframe></p>
 </div>
 
 <div class="footer-col one-half">
-    <h3>Meditation</h3>
-    <p><iframe src="https://www.beeminder.com/widget?slug=meditiation&username=jimjam2629&countdown=true" height="245px" width="230px" frameborder="0px" ></iframe></p>
-    <p><u>Average per week:</u> 5 sessions of Mindfulness Meditation. Tracked manually.</p>
+    <h3>Weight</h3>
+    <p>Keep at about the same weight</p>
+    <p><iframe src="https://www.beeminder.com/widget?slug=weight&username=jimjam2629" height="245px" width="230px" frameborder="0px" ></iframe></p>
 </div>
 
 

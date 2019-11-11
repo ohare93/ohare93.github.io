@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+$screenwidthswitch: 1200px;
+
+body {
+    counter-reset: reference;   
+    // counter-increment: reference; 
+}
+
+@media (min-width: $screenwidthswitch) {
+    #as:after {
+        content: counter(reference);
+        color: #999999;
+        vertical-align: super;
+        font-size: .7em;
+        counter-increment: reference;
+    }
+}
+
+#mar {
+    font-size: 0.82em;
+    line-height: 2.1;
+    color: #a7a4a4;
+
+    > code, > a {
+        color: #717171;
+        background: none;
+        border: none; 
+    }
+
+    @media (min-width: $screenwidthswitch) {
+        position: absolute;
+        left: 59%;
+        right: 1em;
+        margin-left: 23em;
+        max-width: 16em;
+        text-align: left;
+
+        &:before {
+            content: counter(reference) " – ";
+        }
+        &:after {
+            content: ".";
+        }
+    }
+
+    @media (max-width: $screenwidthswitch) {
+        font-size: 0.6em;
+        position: unset;
+        text-align: left;
+        left: 0;
+        bottom: 0;
+
+        &:before {
+            content: "(";
+        }
+        &:after {
+            content: ")";
+        }
+    }
+}
+
