@@ -14,16 +14,18 @@ github_comments_issueid: 7
 
 I have created an Anki Flashcard deck for [WebDiplomacy.net][WebDiplomacy] in order to help ~~myself~~ people remember the territory names :world_map:
 
-Haven't ever used Anki before? Have a look at [Anki Beginner Steps][AnkiBeginnerSteps] page, which may help :+1:
+Haven't ever used Anki before? Have a look at this [Anki Beginner Steps][AnkiBeginnerSteps] page, which may help :+1:
 
 
-## [- -> Deck Link <- -][DiplomacyDeck]
+## [- -> Deck Download Link <- -][DiplomacyDeck]
 
-The deck currently only covers the Classic map, but I can add the [other variant maps][WebDiplomacyMapVariants] easily enough if there's any interest :+1:
+The deck currently only covers the Classic map, but I can add the [other variant maps][WebDiplomacyMapVariants] easily enough if there's any interest.
 
+<br>
 
 -----
 
+<br>
 
 ### Preview
 
@@ -40,9 +42,11 @@ The cards were made using the lovely [Image Occlusion Enhanced Add-on][ImageOccl
 
 ![Test](/assets/games/diplomacy/classic-editor.png)
 
+<br>
 
 -----
 
+<br>
 
 ## Hardcore Deck
 
@@ -65,8 +69,8 @@ Then on the other side it is shown, while the rest remain hidden. You can always
 
 [WebDiplomacy]: https://webdiplomacy.net/ 
 [WebDiplomacyMapVariants]: https://webdiplomacy.net/variants.php
-[DiplomacyDeck]: https://ankiweb.net/shared/info/681500783
 [ImageOcclusionEnhanced]: https://ankiweb.net/shared/info/1374772155
 [GlutanimatePatreon]: https://www.patreon.com/glutanimate
+[DiplomacyDeck]: {{site.baseurl }}/assets/games/diplomacy/Diplomacy.apkg
 [HardcodeDeck]: {{site.baseurl }}/assets/games/diplomacy/Diplomacy_Hardmode.apkg
 [AnkiBeginnerSteps]: {% post_url 2019-01-30-anki-beginner-instructions %}
