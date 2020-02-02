@@ -17,7 +17,7 @@ github_comments_issueid: 8
 During this process I had to navigate a lot of bureaucracy and live in an unfamiliar system. This post is an attempt to give back some of that information to others who wish to or have moved to Denmark in the hopes that I can help make their move smoother and less confusing than my own.
 
 This post contains:
- - Clarifications about unfamiliar terms{% include margin.html content="CPR, Skat, NemID, E-Boks, Yellow Card, etc. See below." %}
+ - Clarifications about unfamiliar terms{% include margin.html content="CPR, Skat, NemID, E-Boks, Yellow Card, etc. See below" %}
  - Necessary bureaucratic tasks I had to do along the way
  - A few tips I wish I had known ahead of time
  - Some opinions!{% include margin.html content="An unspecified amount" %}
@@ -30,27 +30,23 @@ Here is an overview of all the unfamiliar bureaucratic hurdles I had to understa
 
 :link: :exclamation: [International Citizen Service: "Moving to Denmark?"][International Citizen Service]
 
-#### General Overview
+The most important piece of advice you should immediately follow: **Get your name on your mailbox!** This is because for any communication with the government, or delivery in the mail of any of the below documentation, it requires that your name is on the postbox for verification that it is being sent to the right person. 
+
+#### Summary of Unfamiliar Terms
 
 | [CPR#](#cpr-number) | The "Central Person Registration Number" is the unique identifying number used to connect you to official documents and websites |
-| [NemID](#nemid) | Single login for Danish internet banks and government websites {% include margin.html content="Your CPR# is your password"%} |
-| [E&#8209;Boks](#e-boks) | Your online inbox for official mail (banks/tax/etc) |
+| [NemID](#nemid) | Single login for Danish internet banks and government websites{% include margin.html content="Your CPR# is your password"%} |
 | [Skat](#skat) | The government tax office / treasury -- who you pay tax to | 
 | [Yellow&nbsp;Card](#yellow-card) | Your Danish National Health Insurance card, used for all medical appointments and prescriptions |
+| [E&#8209;Boks](#e-boks) | Your online inbox for official mail (banks/tax/etc) |
+| NemKonto | Your default bank account where payments associated with your CPR# are sent |
+| Fierepenge | |
+| Rejsekort | |
 
 
-The most important piece of advice you should immediately follow: **Get your name on your mailbox!** This is because for any communication with the government, or delivery in the mail of any of the above documentation, requires that your name is on the postbox for verification that it is being sent to the right person. 
 
 
-
-TODO: State the order things have to happen in
-
-```
-Step 1: Apply for a personal registration number (CPR) online
-Step 2: Apply for an EU residence document
-Step 3: Collect your CPR-number at your nearest ICS
-Step 4: Apply for a tax card
-```
+---
 
 
 ## CPR Number
@@ -63,15 +59,21 @@ A CPR# is 8 digits followed by 4 digits: the first are your birthday (25/01/1987
 
 #### Helpful Info
 
-You may need the following documentation in order to fill in the application for a CPR#, depending on your own circumstances:
- - Residence Permit: one for EU citizens, another for non-EU
- - Identification: Passport and/or Birth Certificate
- - Marriage Certificate
- - Housing confirmation, such as a rental contract, hotel receipt, etc{% include margin.html content="I simply had my wife sign a document saying 'I allow Jordan to live with me'" %}
+You will need to fill out an online application for your CPR number, after which you will be asked to attend a meeting at the `International Citizen Service` at your local `International House`. For this application, and subsequent in person appointment, you may need the following documentation depending on your own circumstances:
+ - Housing confirmation: rental contract, hotel receipt, etc{% include margin.html content="I simply had my wife sign a document saying 'I allow Jordan to live with me'" %}
+ - Residence Permit: EU or non-EU variety
+ - Identification: Passport or National Identification
+ - Birth Certificate - `only for people under 18`
+ - Marriage Certificate - `only for married couples`{% include margin.html content="It is also a good idea to have your partner come to the appointment with you" %}
+
+TODO: International House locations
+Your can find your local International House here. You can book an appointment online, but those are usually fully booked so it is best simply to go in during their opening times and simply take a number and wait in line.
 
 :link: [General information about your CPR#][How to get a CPR number]
 
 Online Application for CPR Number: :link: [Copenhagen][CPR Number Application Copenhagen], :link: [Everywhere Else][CPR Number Application General]
+
+
 
 [How to get a CPR number]: https://international.kk.dk/artikel/how-do-i-get-cpr-number
 [CPR Number Application Copenhagen]: https://ihcph.kk.dk/artikel/apply-your-cpr-number-here
@@ -84,6 +86,7 @@ TODO: EU Residence Document
 [State Admin Book Time]: https://kk.reservertid.nu/Time/1057?pid=1113
 
 
+---
 
 
 ## NemID
@@ -95,36 +98,67 @@ TODO: NemID
      - Link to app
      - App takes 1 hour to setup
  - Instruction for getting a NemID
-   - Place to go, how to book it, what you need beforehand {% include margin.html content="They give you a temporary username and password" %}
+   - Place to go, how to book it, what you need beforehand{% include margin.html content="They give you a temporary username and password" %}
    - Key booklet will be sent in the post and can take up to a week to arrive, after which you can change to the app
    - Can bring along a Danish partner who can sign some things and vouch for your identity, in order to get the booklet immediately 
    - Will need your passport for ID
 
+Citizen Service Centre (aka 'Borgerservice')
 
-### Bank Account
+After you have a CPR# you can get a NemID.
 
-TODO: Bank Account
- - NemKonto is your default bank account that money comes out of from transactions associated with your NemID
- - Find the link to the English version of the website and bookmark it
-   - [Danske Bank English Login][Danske Bank English Login]
 
-## E-Boks
 
-TODO: E-Boks
- - Mail account for Bank/Tax/Work
+After you have received everything follow these steps to activate your NemID: https://www.nemid.nu/dk-en/get_started/activate_your_nemid/
+
+
+
+
+:link: [Request a NemID][NemID get started]
+
+:link: [Find a Citizen Service Centre close to your postcode][Find citizen service centres]
+
+[NemID get started]: https://www.nemid.nu/dk-en/get_started/request_nemid/
+[Find citizen service centres]: https://service.nemid.nu/dk-da/support/find_dit_borgerservicecenter/
+
+### Nemkonto
+
+When you are sent a payment from the public sector (for salary, tax refunds, student loans, welfare payments, etc) you need only give your CPR number. Then that payment will be sent to your default bank account: **your NemKonto** (aka an 'Easy Account').
+
+In the future if you ever wish where these payments go then you simply change which account is the NemKonto in your online banking. No communication with each payment provider is necessary.
+
+:link: [More info about NemKonto][NemKonto info]
+
+[NemKonto info]: https://www.nemkonto.dk/da/Servicemenu/Engelsk
+
+:bulb: Online banking in Danish can be extremely confusing, as most beginners of Danish do not know complicated bank terminology. I suggest you find the login page for the English version of your online banking and bookmark it. Here is the :link: [Danske Bank English Login][Danske Bank English Login].
+
+### E-Boks
+
+Everyone with a CPR number is given an E-Boks account, which is a digital mailbox which is associated to you. Usually people receive mail into their E-Boks from their bank, municipality, place of work, skat, etc.
+
+You can choose to get email notifications to your personal email account whenever you have mail in your E-Boks. Each user can also store sensitive documents in their account, such as deeds, birth certificates, or insurance documents, up to a total of 1GB.
+
+:link: [E-Boks login][E-Boks login]
+
+[E-Boks login]: https://www.e-boks.com/danmark/en
+
+
+
+---
 
 
 
 ## Skat 
 
-Skat is the Danish Treasury in charge of all tax. {% include margin.html content="Skat also means \"treasure\", so don't get confused if you think people in Denmark call their loved ones \"Tax office\"" %}
+Skat is the Danish Treasury in charge of all tax.{% include margin.html content="Skat also means \"treasure\", so don't get confused if you think people in Denmark call their loved ones \"Tax office\"" %}
 
 You need to get a personal tax number and a tax card from Skat, in order to work or get a Danish bank account. You can do so from the following link:
 
 :link: [Skat Tax Card Application][Skat Tax Card Application]
 
 #### Helpful info
-Opt-out of Church tax. It may be automatically done when you state your religion, but you may automatically have to do it by submitting a ticket in the self service page.
+Opt-out of Church tax{% include margin.html content="If you want to" %}. It may be automatically done when you state your religion in one of the previous forms, but you may have to do it by manually submitting a ticket in the self service page.
 TODO: Explain church tax first, and state the % paid. About 0.7% on average?
 
 If you are you married you should tell Skat, as then you can get your partner's tax free allowance when they are not working.
@@ -134,6 +168,7 @@ If you are you married you should tell Skat, as then you can get your partner's 
 :link: [Danish Tax Help][Tax Help]
 
 
+---
 
 
 
@@ -153,7 +188,7 @@ All medical visits in Denmark (doctors, dentist, hospital visit, etc) require yo
 
 If you are prescribed medicine it is associated with your yellow card. Simply go to the pharmacy (take a ticket!) and they will ask for your yellow card so they can scan it and confirm you have a prescription waiting for you.
 
-:link: [Email Consultation][EmailKonsultation.dk] is a easy way to get medical advice from your doctor, especially in non-emergency situations, simply by logging on and sending your doctor a message. You cannot upload pictures, but you can link to them.
+:link: [Email Consultation][EmailKonsultation.dk] is an easy way to get medical advice from your doctor, especially in non-emergency situations, simply by logging on and sending your doctor a message. You cannot upload pictures, but you can link to them.
 
 
 
@@ -161,8 +196,9 @@ If you are prescribed medicine it is associated with your yellow card. Simply go
 
 ---
 
+## Other Advice
 
-## Work
+### Work
 TODO: Job stuff
 
  - Currently no paid holidays for the first year, but it is in the process of changing [Helpful Page Link][New Danish Holiday Law]
@@ -177,7 +213,7 @@ TODO: Firiepenge?
 
 A few Danish job search sites: :link: [Jobnet][Danish Job Search jobnet], :link: [JobsInCopenhagen][Danish Job Search jobsincopenhagen], :link: [WorkInDenmark][Danish Job Search workindenmark]
 
-## Danish Language Classes
+### Danish Language Classes
 
 TODO: Learning Danish
 Government courses seem expensive and restrictive. They are also in the process of changing back to being free, idfk though. 
@@ -188,7 +224,7 @@ Consider a private school. TODO: link to Studieskolen.
 
 
 
-# Miscellaneous Advice
+### Miscellaneous
 
 TODO: Miscellaneous stuff
 Change your phone's default to +45
@@ -214,8 +250,7 @@ Library
 Learn the name of your own country in Danish. "Storbritannien" never would have occured to me, and was hard to find in a dropdown list!
 
 
-
-
+<br><br><br><br><br>
 
 If I've missed anything, or my information is out of date, please let me know in the comments below!
 

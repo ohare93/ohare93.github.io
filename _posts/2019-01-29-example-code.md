@@ -89,4 +89,5 @@ Reference needs to be lower case, with spaces changes to -s
 
 #### Non Breaking Characters:
 
+| NB space | &nbsp; |
 | NB - | &#8209; |
