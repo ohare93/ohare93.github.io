@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Moving to Denmark"
-date:   2019-09-21 11:00:00 -0000
+date:   2020-02-01 00:00:00 -0000
 categories: []
 tags: []
 permalink: moving-to-denmark
-published: true
+published: true&#8209;
 hidden: true
 github_comments_issueid: 8
 ---
@@ -18,7 +18,7 @@ During this process I had to navigate a lot of bureaucracy with strange names in
 
 I hope some of these quick overviews of the Danish government and public services will help others grasp them faster than I did! I will link to the relevant sites and helpful pages for each individual part, but more of it can be found on the following ICS page:
 
-:link: :exclamation: [International Citizen Service: "Moving to Denmark?"][International Citizen Service]
+:exclamation: [:link: International Citizen Service: "Moving to Denmark?"][International Citizen Service]
 
 
 
@@ -29,10 +29,10 @@ I hope some of these quick overviews of the Danish government and public service
 | [Skat](#skat) | The government tax office / treasury -- who you pay tax to | 
 | [Yellow&nbsp;Card](#yellow-card) | Your Danish National Health Insurance card, used for all medical appointments and prescriptions |
 | [E&#8209;Boks](#e-boks) | Your online inbox for official mail (banks/tax/etc) |
-| NemKonto | Your default bank account where payments associated with your CPR# are sent |
-| Fierepenge | |
+| [NemKonto](#nemkonto) | Your default bank account where payments associated with your CPR# are sent |
+| [Feriepenge](#holidays) | "Holiday Allowance" that you earn throughout the year and can take out in summer |
+| [A&#8209;kasse](#work) | An Unemployment Insurance Fund |
 | Rejsekort | |
-| A-kasse | |
 
 
 
@@ -41,14 +41,20 @@ I hope some of these quick overviews of the Danish government and public service
 
 
 ## CPR Number
-`Central Person Registration Number` is the first and most important thing to apply for. It is used for most things in Denmark
+`Central Person Registration Number` is the first and most important thing to apply for. It is used for most things in Denmark:
 
 > Residents of Denmark are legally required to have a CPR number. You will also notice that your CPR number allows you to access a range of services in Denmark. **You will need it to open a bank account, get a Danish phone number, borrow materials from the library, pay tax, receive salary, etc.**
 
 
 A CPR# is 8 digits followed by 4 digits: the first are your birthday (25/01/1987 would be "25011987") and the last are a unique identifier.{% include margin.html content="Males CPR# end in an odd number and females end in an even" %}
 
-:link: [General information about your CPR#][How to get a CPR number]
+[:link: General information about your CPR#][How to get a CPR number]
+
+:exclamation: You can only apply for a CPR# *after* you have found a place to live and actually live at that address. Get more information about finding a home at [:link: lifeindenmark.dk][lifeindenmark find a home] or [:link: international.kk.dk][kk.dk find a home].
+
+[lifeindenmark find a home]: https://lifeindenmark.borger.dk/Coming-to-Denmark/Housing
+[kk.dk find a home]: https://international.kk.dk/housing?nm_extag=et%2Clink%2CFLPN
+
 
 #### Helpful Info
 
@@ -60,9 +66,9 @@ You will need to fill out an online application for your CPR number, after which
  - Marriage Certificate - `only for married couples`{% include margin.html content="It is also a good idea to have your partner come to the appointment with you" %}
 
 
-Online Application for CPR Number: :link: [Copenhagen][CPR Number Application Copenhagen], :link: [Everywhere Else][CPR Number Application General]
+Online Application for CPR Number: [:link: Copenhagen][CPR Number Application Copenhagen], [:link: Everywhere Else][CPR Number Application General]
 
-You can find your local International House on the :link: [International Citizen Service page][International Citizen Service]. You can book an appointment online (:link: [Copenhagen Booking Page][State Admin Book Time]) but those are usually fully booked so it is best simply to go in during their opening times, take a number, and wait in line.
+You can find your local International House on the [:link: International Citizen Service page][International Citizen Service]. You can book an appointment online ([:link: Copenhagen Booking Page][State Admin Book Time]) but those are usually fully booked so it is best simply to go in during their opening times, take a number, and wait in line.
 
 :exclamation: The International House is also where you should go in order to get help with the paperwork for a European Union Residence Permit, Tax Card, Foreign and Driving License, not just CPR numbers. 
 
@@ -101,9 +107,9 @@ After you have received everything follow these steps to activate your NemID: ht
 
 
 
-:link: [Request a NemID][NemID get started]
+[:link: Request a NemID][NemID get started]
 
-:link: [Find a Citizen Service Centre close to your postcode][Find citizen service centres]
+[:link: Find a Citizen Service Centre close to your postcode][Find citizen service centres]
 
 [NemID get started]: https://www.nemid.nu/dk-en/get_started/request_nemid/
 [Find citizen service centres]: https://service.nemid.nu/dk-da/support/find_dit_borgerservicecenter/
@@ -114,11 +120,11 @@ When you are sent a payment from the public sector (for salary, tax refunds, stu
 
 In the future if you ever wish where these payments go then you simply change which account is the NemKonto in your online banking. No communication with each payment provider is necessary.
 
-:link: [More info about NemKonto][NemKonto info]
+[:link: More info about NemKonto][NemKonto info]
 
 [NemKonto info]: https://www.nemkonto.dk/da/Servicemenu/Engelsk
 
-:bulb: Online banking in Danish can be extremely confusing, as most beginners of Danish do not know complicated bank terminology. I suggest you find the login page for the English version of your online banking and bookmark it. Here is the :link: [Danske Bank English login page][Danske Bank English Login].
+:bulb: Online banking in Danish can be extremely confusing, as most beginners of Danish do not know complicated bank terminology. I suggest you find the login page for the English version of your online banking and bookmark it. Here is the [:link: Danske Bank English login page][Danske Bank English Login].
 
 ### E-Boks
 
@@ -126,7 +132,7 @@ Everyone with a CPR number is given an E-Boks account, which is a digital mailbo
 
 You can choose to get email notifications to your personal email account whenever you have mail in your E-Boks. Each user can also store sensitive documents in their account, such as deeds, birth certificates, or insurance documents, up to a total of 1GB.
 
-:link: [E-Boks login][E-Boks login]
+[:link: E-Boks login][E-Boks login]
 
 [E-Boks login]: https://www.e-boks.com/danmark/en
 
@@ -142,7 +148,9 @@ Skat is the Danish Treasury in charge of all tax.{% include margin.html content=
 
 You need to get a personal tax number and a tax card from Skat, in order to work or get a Danish bank account. You can do so from the following link:
 
-:link: [Skat Tax Card Application][Skat Tax Card Application]
+[:link: Moving to Denmark Tax Guide][Danish Tax Number Steps]
+
+[:link: Skat Tax Card Application][Skat Tax Card Application]
 
 
 #### Helpful info
@@ -154,9 +162,9 @@ If you are you married you should tell Skat, as then you can get your partner's 
 
 Each year in January all working people in Denmark are required to review their tax to give Skat an up to date estimate of your earnings for the year. You should receive an email to your E-Boks in early January, with a personal review.
 
-:link: [Skat Self Service][Skat Self Service]
+[:link: Skat Self Service][Skat Self Service]
 
-:link: [Danish Tax Help][Tax Help]
+[:link: Danish Tax Help][Tax Help]
 
 
 
@@ -171,7 +179,7 @@ Each year in January all working people in Denmark are required to review their 
  - Essentially the Danish version of a "Blue Card" aka "European Health Insurance Card"
  - It has your doctors name/address/contact details on it, and you'll get a new one whenever you switch doctors
 
- :link: [General Information about Yellow Cards][Getting a Yellow Card]
+ [:link: General Information about Yellow Cards][Getting a Yellow Card]
 
  [Getting a Yellow Card]: https://international.kk.dk/healthcard
 
@@ -181,7 +189,7 @@ All medical visits in Denmark (doctors, dentist, hospital visit, etc) require yo
 
 If you are prescribed medicine it is associated with your yellow card. Simply go to any pharmacy (take a ticket!) and they will ask for your yellow card so they can scan it and confirm you have a prescription waiting for you.
 
-:link: [Email Consultation][EmailKonsultation.dk] is an easy way to get medical advice from your doctor, especially in non-emergency situations, simply by logging on and sending your doctor a message. The response time ranges from a few days to a week, in my experience. You cannot upload pictures, but you can link to them.
+[:link: Email Consultation][EmailKonsultation.dk] is an easy way to get medical advice from your doctor, especially in non-emergency situations, simply by logging on and sending your doctor a message. The response time ranges from a few days to a week, in my experience. You cannot upload pictures, but you can link to them.
 
 
 
@@ -193,26 +201,36 @@ If you are prescribed medicine it is associated with your yellow card. Simply go
 
 ### Work
 
-<div style="float:right">
-  <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=jordanmunchoh-21&language=en_GB&marketplace=amazon&region=GB&placement=B077CRBVBZ&asins=B077CRBVBZ&linkId=e73dd4dad0f3d886adc009866f2af034&show_border=true&link_opens_in_new_window=true"></iframe>
-</div>
-
-I recommend the book [How to Work in Denmark][How to Work in Denmark Amazon] by Kay Xander Mellish. Here is a summary:
+I recommend the book [:book: How to Work in Denmark][How to Work in Denmark Amazon] by *Kay Xander Mellish*. Here is a summary:
 
 >With its high salaries and good work-life balance, Denmark is an attractive place to work for professionals from all over the world. But the Danish workplace, like Danish culture as a whole, is built on unwritten rules and unspoken expectations. "How to Work in Denmark" explains some of the rules of the road in the Danish workplace, as well as how to find and keep a job in Denmark.
 
-A few Danish job search sites: :link: [Jobnet][Danish Job Search jobnet], :link: [JobsInCopenhagen][Danish Job Search jobsincopenhagen], :link: [WorkInDenmark][Danish Job Search workindenmark]. 
+A few Danish job search sites: [:link: Jobnet][Danish Job Search jobnet], [:link: JobsInCopenhagen][Danish Job Search jobsincopenhagen], [:link: WorkInDenmark][Danish Job Search workindenmark]. 
 
-:bulb: Contact *Danish* recruiters on LinkedIn. If you do not know how to go about contacting Danish recruiters then consider asking any of your working professional friends/contacts in Denmark if they will post a small message to LinkedIn on your behalf. Just something small stating they have a friend looking for work, with some minimal contact information about you which will get lots of *Danish* recruiters to notice you.{% include margin.html content="Like sharks..." %}
+:bulb: Contact *Danish* recruiters on LinkedIn. If you do not know how to go about contacting Danish recruiters then consider asking any of your working professional friends/contacts in Denmark if they will post a small message to LinkedIn on your behalf. Just something small stating they have a friend looking for work, with some minimal contact information about you which will get lots of *Danish* recruiters to flock to you.{% include margin.html content="Like sharks..." %}
 
-When you get a job remember to note down your companies CVR#, as you will need to give it to Skat. A CVR number is just a CPR number but for companies, and tells Skat who you are working for for tax reasons.
-TODO: Link to find a CVR page.
+When you get a job remember to note down your companies CVR#, as you will need to give it to Skat. A CVR number is just a CPR number but for companies, and tells Skat who you are working for for tax reasons. You can find the CVR of any company at [:link: virk.dk][CVR Search Site]
 
-There are currently no paid holidays for the first year of your work, but :link: [this law is in the process of changing][New Danish Holiday Law].
+[CVR Search Site]: https://datacvr.virk.dk/data/index.php?q=forside&language=en-gb
 
-TODO: Potentially join a Union and A-kasse?
+Most working Danes are a member of a Trade Union, which can give them guidance on contracts, salary, workers rights, and other benefits. There are many different Trade Unions, so look for the one that is best for your profession. One can also join an "A-kasse" aka "Unemployment Insurance Fund", which is usually another branch of a Trade Union. Being a member is usually costly, but can insure you a percentage of your previous salary (up to a cap) for up to 2 years of unemployment. You must be a member of an A-kasse for 1 year before you are entitled to claim the benefits. EU citizens working in the EU can also transfer their unemployment insurance benefits within 8 weeks of termination of previous employment.
 
-TODO: Firiepenge?
+[:link: Trade Union Further Info][Union info], [:link: A-kasse Further Info][A-kasse info]
+
+
+[Union info]: https://www.workindenmark.dk/Working-in-DK/Trade-unions
+[A-kasse info]: https://www.workindenmark.dk/Working-in-DK/Unemployment-insurance
+
+#### Holidays
+
+There are currently (Feb 2020) no paid holidays for the first year of your work, instead you save up holidays to spend in the next year. **However** [:link: this law is in the process of changing][New Danish Holiday Law]. As of September 2020 the law will be essentially the same as all of Europe: earn and spend holidays as you earn them in the same year.
+
+
+Your place of work may pay part of your salary into 'Feriepenge' aka "Holiday Allowance"{% include margin.html content="Some do not, and simply give you all of your salary instead" %}. This is money which is intended to be used for/during a holiday from work. You can view how much money you have accrued into your Feriekonto at [:link: borger.dk][Feriepenge], but in general you cannot request this money until after May 1st and must take a holiday at the time you take out the money.
+
+>Your employer calculates your holiday allowance. In general, you accrue 12.5% of your salary in holiday allowance. This complies with 2.08 days of holiday for every month that you are employed.
+
+[Feriepenge]: https://lifeindenmark.borger.dk/Living-in-Denmark/Work/Holiday-allowance
 
 ### Danish Language Classes
 
@@ -236,9 +254,6 @@ Change your phone's default to +45
 Useful words to learn
  - "Afmeld" is "unsubscribe" for spam emails
 
-<div style="float:right">
-  <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=jordanmunchoh-21&language=en_GB&marketplace=amazon&region=GB&placement=B0722GJNNT&asins=B0722GJNNT&linkId=776e555d541e19e71db0dad704667441&show_border=true&link_opens_in_new_window=true"></iframe>
-</div>
 
 Living in Copenhagen
  - Rejsekort is useful
@@ -246,14 +261,17 @@ Living in Copenhagen
 Getting Married in Denmark? Bring along:
  - Birth Certificate
  - Certificate of No Impediment
- - Costs 1000kr-ish?
+ - Non-residents pay a fee of 500kr
+ - Marriages of Convenience 
+
+[Married in CPH]: https://international.kk.dk/marriedincph
 
 
 Moving to Denmark with Pets
- - Make sure you are covered by [the local laws][Importing Pets to Denmark]
+ - Make sure you are covered by [:link: the local laws][Importing Pets to Denmark]
 
 Library
- - [Bibliotek.dk][Bibliotek]
+ - [:link: Bibliotek.dk][Bibliotek]
 
 Learn the name of your own country in Danish. "Storbritannien" never would have occured to me, and was hard to find in a dropdown list!
 
@@ -261,6 +279,24 @@ Learn the name of your own country in Danish. "Storbritannien" never would have 
 <br><br><br><br><br>
 
 If I've missed anything, or my information is out of date, please let me know in the comments below!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!----------------------------->
@@ -295,9 +331,9 @@ If I've missed anything, or my information is out of date, please let me know in
 [Bibliotek]: https://bibliotek.dk/
 
 
-[How to Work in Denmark Amazon]: https://www.amazon.co.uk/How-Work-Denmark-succeeding-understanding-ebook/dp/B077CRBVBZ/ref=as_li_ss_tl?keywords=how+to+work+in+denmark&qid=1580745924&sr=8-1&linkCode=ll1&tag=jordanmunchoh-21&linkId=105e5270eae071d27fcabc7c98f0c704&language=en_GB
+[How to Work in Denmark Amazon]: https://amzn.to/2OreIjt
 
-[How to Live in Denmark Amazon]: https://www.amazon.co.uk/How-Live-Denmark-Updated-foreigners-ebook/dp/B0722GJNNT/ref=as_li_ss_tl?keywords=how+to+live+in+denmark&qid=1580746070&s=digital-skills&sr=8-1&linkCode=ll1&tag=jordanmunchoh-21&linkId=c8ad6e35cbc1d7ac75fa8e5203e16741&language=en_GB
+[How to Live in Denmark Amazon]: https://amzn.to/372lrH4
 
 
 
@@ -306,11 +342,8 @@ If I've missed anything, or my information is out of date, please let me know in
 
 [ICS Job Help]: http://icitizen.dk/Workindenmark/Website/Find-a-job
 
-[CVR Search Site]: https://datacvr.virk.dk
 
 
-
-
-[Danish Tax Number]: https://skat.dk/skat.aspx?oid=2246935&ik_navn=transport
+[Danish Tax Number Steps]: https://skat.dk/skat.aspx?oid=2246935&ik_navn=transport
 
 
