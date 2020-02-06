@@ -84,33 +84,35 @@ You can find your local International House on the [:link: International Citizen
 
 ## NemID
 
-TODO: NemID
- - Single login for Danish internet banks and government websites
- - Uses your CPR# as a login, along with your password, and a single use key
-   - Key booklet can be replaced with an app
-     - Link to app
-     - App takes 1 hour to setup
- - Instruction for getting a NemID
-   - Place to go, how to book it, what you need beforehand{% include margin.html content="They give you a temporary username and password" %}
-   - Key booklet will be sent in the post and can take up to a week to arrive, after which you can change to the app
-   - Can bring along a Danish partner who can sign some things and vouch for your identity, in order to get the booklet immediately 
-   - Will need your passport for ID
+![Image](/assets/Moving-To-Denmark/nemidlogin.jpeg){: style="float: right; padding-left: 1em;"}
 
-Citizen Service Centre (aka 'Borgerservice')
+NemID is a single login for many Danish sites, such as banks, doctors, libraries, and any government websites. It is intended to be a safe sign for any website/business that wishes to make use of it. **You will usually need a NemID before you can setup a Danish bank account.** 
 
-After you have a CPR# you can get a NemID.
+[:link: NemID general info][NemID general info], [:link: Request a NemID][NemID get started]
+
+[NemID general info]: https://www.nemid.nu/dk-en/about_nemid/introduktion_til_nemid/index.html
 
 
+A NemID account consists of three parts:
 
-After you have received everything follow these steps to activate your NemID: https://www.nemid.nu/dk-en/get_started/activate_your_nemid/
+1. **Username**: Your CPR number
+1. **Password**: Set by you during the initial setup
+1. **One time password**: From a small key booklet mailed to you (but can be replaced with an app)
 
-
-
-
-[:link: Request a NemID][NemID get started]
+To attain a NemID you must first have a CPR#, then simply visit your local `Citizen Service Centre` (aka 'Borgerservice') and request one.
 
 [:link: Find a Citizen Service Centre close to your postcode][Find citizen service centres]
 
+You will need to bring a passport for identification. They will setup a temporary account for you, with a temporary username and password (which you will need in order to sign in the first time) and send you the key booklet by post. You will need to wait up to a week for the key booklet to arrive before logging in the first time and setting up your account - though if you are in a hurry and are married to a Dane{% include margin.html content="My condolences" %} you can bring along your Danish partner who can sign some documents to vouch for your identity, then you can get the key booklet *immediately* at that meeting.
+
+After you have received everything [:link: follow these steps to activate your NemID][NemID activate instructions]
+
+After this initial setup and your first login your account will start to use your CPR# as the username. Also at this point you can switch from the key booklet to the NemID phone app, which is much more convenient. You can still use the booklet afterwards if you like, until you run out of one-time codes. All you have to do setup the code app is to sign in on it once.{% include margin.html content="*Then wait 1 hour...* for security reasons" %}
+
+[:link: NemID Code App][NemID code app] for Android or iOS
+
+[NemID code app]: https://www.nemid.nu/dk-en/get_started/code_app/
+[NemID activate instructions]: https://www.nemid.nu/dk-en/get_started/activate_your_nemid/
 [NemID get started]: https://www.nemid.nu/dk-en/get_started/request_nemid/
 [Find citizen service centres]: https://service.nemid.nu/dk-da/support/find_dit_borgerservicecenter/
 
@@ -155,14 +157,13 @@ You need to get a personal tax number and a tax card from Skat, in order to work
 
 #### Helpful info
 
-Opt-out of Church tax{% include margin.html content="If you want to" %}. It may be automatically done when you state your religion in one of the previous forms, but you may have to do it by manually submitting a ticket in the self service page.
-TODO: Explain church tax first, and state the % paid. About 0.7% on average?
+Check if you are paying Church tax, and opt-out if you do not want to pay ~0.7% tax.{% include margin.html content="The exact percentage depends on the municipality" %} You have have been automatically opt-ed out if you gave your religion in one of the many other forms, but you may have to do it by manually submitting a ticket in the Skat self service page.
+
+[:link: Skat Self Service][Skat Self Service]
 
 If you are you married you should tell Skat, as then you can get your partner's tax free allowance when they are not working.
 
 Each year in January all working people in Denmark are required to review their tax to give Skat an up to date estimate of your earnings for the year. You should receive an email to your E-Boks in early January, with a personal review.
-
-[:link: Skat Self Service][Skat Self Service]
 
 [:link: Danish Tax Help][Tax Help]
 
@@ -250,6 +251,11 @@ Furthermore, you will be sent a letter after you get a CPR# saying you have to r
 
 ### Miscellaneous
 
+Similar to above, I also recommend the book [:book: How to **Live** in Denmark][How to Live in Denmark Amazon] by *Kay Xander Mellish*. Here is a summary:
+
+>An updated version of the popular book based on the "How to Live in Denmark" podcast, with 8 new chapters. In this fun, easy-to-read book, Kay draws on her own experience as a foreigner in Denmark in when it comes to learning Danish, trying to find a job in Denmark, and looking for a place to live in Copenhagen. She also touches on dating in Denmark, Danish drinking culture, Danish child-raising, and how you can guess a Danish person's age from their first name alone. This entertaining look at life as an outsider in Denmark draws on gentle humor and can be enjoyed by both foreigners and their Danish friends.
+
+
 :exclamation: :exclamation: :exclamation: **Get your name on your mailbox!**  This is the most important piece of advice on this page, and you should do it as soon as you can. This is because for any communication with the government, or delivery in the mail of any of the below documentation, it requires that your name is on the postbox for verification that it is being sent to the right person. Otherwise for hotels and such I believe it is sometimes possible to send it to the proprieter, and have them hand deliver it to you.
 
 **Living in Copenhagen?** Consider getting a [:link: Rejsekort][Rejsekort] for easy transport via bus :bus:, train :train:, and metro :metro:. You can have a personal card with your details on it and recurring payments setup when you get below a certain amount, or simply buy an anonymous prepayed card and top that up as you go in any machine in a metro stop.
@@ -276,9 +282,6 @@ Furthermore, you will be sent a letter after you get a CPR# saying you have to r
  - "Afmeld" is "unsubscribe" for spam emails
  - The name of your own country in Danish. "Storbritannien" never would have occured to me, and was hard to find in a dropdown list! -->
 
-Similar to above, I also recommend the book [:book: How to **Live** in Denmark][How to Live in Denmark Amazon] by *Kay Xander Mellish*. Here is a summary:
-
->An updated version of the popular book based on the "How to Live in Denmark" podcast, with 8 new chapters. In this fun, easy-to-read book, Kay draws on her own experience as a foreigner in Denmark in when it comes to learning Danish, trying to find a job in Denmark, and looking for a place to live in Copenhagen. She also touches on dating in Denmark, Danish drinking culture, Danish child-raising, and how you can guess a Danish person's age from their first name alone. This entertaining look at life as an outsider in Denmark draws on gentle humor and can be enjoyed by both foreigners and their Danish friends.
 
 
 <br><br><br><br><br>
