@@ -159,7 +159,7 @@ You need to get a personal tax number and a tax card from Skat in order to work 
 
 #### Helpful info
 
-Check if you are paying Church tax, and opt-out if you do not want to pay ~0.7% tax.{% include margin.html content="The exact percentage differs between municipalities." %} You have have been automatically opt-ed out if you gave your religion in one of the many other forms, but you may have to do it by manually submitting a ticket in the Skat self service page.
+Check if you are paying Church tax, and opt-out if you do not want to pay ~0.7% tax.{% include margin.html content="The exact percentage differs between municipalities." %} You may have been automatically opt-ed out if you gave your religion in one of the many other forms, but you may have to do it by manually submitting a ticket in the Skat self service page.
 
 [:link: Skat Self Service][Skat Self Service]
 
@@ -242,9 +242,9 @@ There are 'free' government courses in the Danish language however there is a lo
 
 [Danish language education]: https://international.kk.dk/artikel/danish-language-education-programme-0
 
-Furthermore, you will be sent a letter after you get a CPR# saying you have to register with a Danish Language Centre within 30days of the letter, otherwise you will lose your entitlement to Government courses. Regardless, even if you do not wish to start Danish classes immediately, or if you do not wish to go with public schools in general, you should setup an appointment to go in person and register with them *but say you do wish take any lessons at that time*. This way your entitlement is not lost, and you may decide to change your mind in the future, while you are settling in or even taking Danish lessons at a private school.
+Furthermore, you will be sent a letter after you get a CPR# saying you have to register with a Danish Language Centre within 30days of the letter, otherwise you will lose your entitlement to Government courses. Regardless, even if you do not wish to start Danish classes immediately, or if you do not wish to go with public schools in general, you should setup an appointment to go in person and register with them *but say you do not wish to take any lessons at that time*. This way your entitlement is not lost, and you may decide to change your mind in the future, while you are settling in or even taking Danish lessons at a private school.
 
-[:link: Studieskolen Language School][Studieskolen] - my Danish :denmark: language school of choice in Copenhagen.
+[:link: Studieskolen Language School][Studieskolen] - my Danish :denmark: language school of choice in Copenhagen.{% include margin.html content="It was recommended by a few colleagues, and I personally like it because of the flexibility and online material." %}
 
 
 [Studieskolen]: https://www.studieskolen.dk/en
