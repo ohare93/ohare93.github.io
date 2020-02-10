@@ -2,8 +2,8 @@
 layout: post
 title:  "Anki Beginner Steps"
 date:   2019-01-29 12:00:00 -0000
-categories: [SRS]
-tags: [Anki, Tutorial]
+categories: [Anki]
+tags: []
 permalink: anki-beginner-steps
 published: true
 hidden: false
@@ -302,7 +302,7 @@ Documentation covering all functionality Anki has to offer. Also see the [Anki G
 
 [AnkiManual]: https://apps.ankiweb.net/docs/manual.html
 [AnkiManualSiblings]: https://apps.ankiweb.net/docs/manual.html#siblings
-[AnkiManualLeeches]: (https://apps.ankiweb.net/docs/manual.html#leeches)
+[AnkiManualLeeches]: https://apps.ankiweb.net/docs/manual.html#leeches
 [AnkiManualProfiles]: https://apps.ankiweb.net/docs/manual.html#profiles-&-preferences
 
 [AnkiMobileAndroid]: https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=en_GB

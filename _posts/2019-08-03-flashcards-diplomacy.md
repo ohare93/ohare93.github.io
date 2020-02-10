@@ -2,8 +2,8 @@
 layout: post
 title:  "Diplomacy Flashcards"
 date:   2019-08-03 12:00:00 -0000
-categories: [Games]
-tags: [Diplomacy, Anki, Flashcard Deck]
+categories: [Anki, Diplomacy, Deck]
+tags: []
 permalink: diplomacy-flashcards
 published: true
 hidden: false

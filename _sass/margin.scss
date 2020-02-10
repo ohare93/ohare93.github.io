@@ -40,7 +40,7 @@ body {
             content: counter(reference) " – ";
         }
         &:after {
-            content: ".";
+            content: "";
         }
     }
 
