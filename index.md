@@ -5,7 +5,7 @@
 layout: default
 ---
 
-This blog is dedicated to anything and everything I find interesting, such as Learning :books:, Programming :keyboard:, Denmark :denmark:, Board Games :game_die:, and Self Improvement :+1:
+This blog is dedicated to anything and everything I find interesting, such as Learning :books:, Programming :keyboard:, Denmark :denmark:, Board Games :game_die:, and Self Improvement :+1:{% include margin.html content="If I ever eventually start posting regularly, that is!" %}
 
 
 <div class="home">
