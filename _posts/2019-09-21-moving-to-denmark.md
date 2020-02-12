@@ -48,7 +48,7 @@ I hope some of these quick overviews of the Danish government and public service
 > Residents of Denmark are legally required to have a CPR number. You will also notice that your CPR number allows you to access a range of services in Denmark. **You will need it to open a bank account, get a Danish phone number, borrow materials from the library, pay tax, receive salary, etc.**
 
 
-A CPR# is 8 digits followed by 4 digits: the first are your birthday (25/01/1987 would be '25011987') and the last are a unique identifier.{% include margin.html content="Males CPR# end in an odd number and females end in an even." %}
+A CPR# is 6 digits followed by 4 digits: the first are your birthday (25/01/1987 would be '250187') and the last are a unique identifier.{% include margin.html content="Males CPR# end in an odd number and females end in an even." %}
 
 [:link: General information about your CPR#][How to get a CPR number]
 
