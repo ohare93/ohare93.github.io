@@ -61,9 +61,10 @@ A CPR# is 6 digits followed by 4 digits: the first are your birthday (25/01/1987
 #### Helpful Info
 
 You will need to fill out an online application for your CPR#, after which you will be asked to attend a meeting at the `International Citizen Service` at your local `International House`. For this application, and subsequent in person appointment, you may need the following documentation depending on your own circumstances:
- - Housing Confirmation: rental contract, hotel receipt, etc{% include margin.html content="I simply had my wife sign a document saying 'I allow Jordan to live with me'." %}
+ - Housing Confirmation: rental contract, hotel receipt, etc{% include margin.html content="I simply had my wife sign a document saying 'I allow Jordan to live with me'." %}, for a period of no less than 1 month
  - Residence Permit: EU or non-EU variety
  - Identification: Passport or National Identification
+ - A Passport sized photo
  - Birth Certificate - *only for people under 18*
  - Marriage Certificate - *only for married couples*{% include margin.html content="It is also a good idea to have your partner come to the appointment with you." %}
 
@@ -72,7 +73,7 @@ Online Application for CPR#: [:link: Copenhagen][CPR Number Application Copenhag
 
 You can find your local International House on the [:link: International Citizen Service page][International Citizen Service]. You can book an appointment online ([:link: Copenhagen Booking Page][State Admin Book Time]) but those are usually fully booked so it is best simply to go in during their opening times, take a number, and wait in line.
 
-:exclamation: The International House is also where you should go in order to get help with the paperwork for a European Union Residence Permit, Tax Card, Foreign and Driving License, not just CPR#s. 
+:exclamation: The International House is also where you should go in order to get help with the paperwork for a European Union Residence Permit, Tax Card, or Foreign Driving License, not just CPR#s. **To get a Residency Permit you will most likely need to bring a work contract signed within the last 30 days.**
 
 
 [How to get a CPR number]: https://international.kk.dk/artikel/how-do-i-get-cpr-number
@@ -88,7 +89,7 @@ You can find your local International House on the [:link: International Citizen
 
 ![Image](/assets/Moving-To-Denmark/nemidlogin.jpeg){: style="float: right; padding-left: 1em;"}
 
-NemID is a single login for many Danish sites, such as banks, doctors, libraries, and any government websites. It is intended to be a safe sign for any website/business that wishes to make use of it. **You will usually need a NemID before you can setup a Danish bank account.** 
+NemID is a single login for many Danish sites, such as banks, doctors, libraries, and any government websites. It is intended to be a safe sign-in for any website/business that wishes to make use of it. **You will usually need a NemID before you can setup a Danish bank account.** 
 
 [:link: NemID general info][NemID general info], [:link: Request a NemID][NemID get started]
 
